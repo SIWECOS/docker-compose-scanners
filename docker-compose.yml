@@ -2,18 +2,18 @@ version: '2'
 
 services:
 
-    header-scanner:
+    header-domxss-scanner:
         image: siwecos/hshs-domxss-scanner
         ports:
-            - 8090:8181
-
-    domxss-scanner:
-        image: siwecos/hshs-domxss-scanner
-        ports:
-            - 8091:8181
+            - 8090:2015
 
     infoleak-scanner:
         image: siwecos/infoleak-scanner
         ports:
-            - 8092:80
+            - 8091:80
+
+    ws-tls-scanner:
+        image: siwecos/ws-tls-scanner
+        ports:
+            - 8092:8080
 
