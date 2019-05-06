@@ -3,7 +3,9 @@ version: '3'
 services:
 
     hshs-domxss-scanner:
-        image: siwecos/hshs-domxss-scanner:latest
+        image: siwecos/hshs-domxss-scanner:develop
+        ports:
+            - 8090:2015
         depends_on:
             - redis
         environment:
@@ -11,26 +13,34 @@ services:
             - REDIS_QUEUE=hshs-domxss-scanner
 
     infoleak-scanner:
-        image: siwecos/infoleak-scanner:latest
+        image: siwecos/infoleak-scanner:develop
+        ports:
+            - 8091:80
 
     ws-port-scanner:
-        image: siwecos/ws-port-scanner:latest
+        image: siwecos/ws-port-scanner:develop
+        ports:
+            - 8092:8080
 
     ws-tls-scanner:
-        image: siwecos/ws-tls-scanner:latest
+        image: siwecos/ws-tls-scanner:develop
+        ports:
+            - 8093:8080
 
     version-scanner:
-        image: siwecos/version-scanner:latest
+        image: siwecos/version-scanner:develop
+        ports:
+            - 8094:2015
         depends_on:
             - redis
         volumes:
-            - signatures_production:/scanner/storage/signatures
+            - signatures:/scanner/storage/signatures
         environment:
             - REDIS_HOST=redis
             - REDIS_QUEUE=version-scanner
 
     siwecos-core-api:
-        image: siwecos/siwecos-core-api:latest
+        image: siwecos/siwecos-core-api:develop
         ports:
             - 8000:80
         depends_on:
@@ -54,13 +64,16 @@ services:
             - DB_PASSWORD=siwecos
             - DB_DATABASE=coreApi
             - REDIS_CLIENT=phpredis
+            - APP_DEBUG=true
             - LOG_CHANNEL=stderr
 
 
     mariadb:
         image: mariadb:latest
+        ports:
+            - 3306:3306
         volumes:
-            - db_production:/var/lib/mysql
+            - db:/var/lib/mysql
         environment:
             - MYSQL_ROOT_PASSWORD=siwecosRoot
             - MYSQL_USER=siwecos
@@ -71,5 +84,5 @@ services:
         image: redis:latest
 
 volumes:
-    db_production:
-    signatures_production:
+    db:
+    signatures:
