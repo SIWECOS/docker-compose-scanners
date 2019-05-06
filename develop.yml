@@ -10,7 +10,8 @@ services:
             - redis
         environment:
             - REDIS_HOST=redis
-            - REDIS_QUEUE=hshs-domxss-scanner
+            - REDIS_DB=2
+            - REDIS_CACHE_DB=3
 
     infoleak-scanner:
         image: siwecos/infoleak-scanner:develop
@@ -37,7 +38,8 @@ services:
             - signatures:/scanner/storage/signatures
         environment:
             - REDIS_HOST=redis
-            - REDIS_QUEUE=version-scanner
+            - REDIS_DB=4
+            - REDIS_CACHE_DB=5
 
     siwecos-core-api:
         image: siwecos/siwecos-core-api:develop
@@ -58,7 +60,8 @@ services:
             - VERSION_SCANNER_URL=http://version-scanner:2015/api/v1/version
             - USER_AGENT=
             - REDIS_HOST=redis
-            - REDIS_QUEUE=siwecos-core-api-queue
+            - REDIS_DB=0
+            - REDIS_CACHE_DB=1
             - DB_HOST=mariadb
             - DB_USERNAME=siwecos
             - DB_PASSWORD=siwecos
