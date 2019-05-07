@@ -5,7 +5,7 @@ services:
     hshs-domxss-scanner:
         image: siwecos/hshs-domxss-scanner:develop
         ports:
-            - 8090:2015
+            - 8090:80
         depends_on:
             - redis
         environment:
@@ -51,9 +51,9 @@ services:
         environment:
             - APP_URL=http://siwecos-core-api
             # - BLACKLIST_SCANNER_URL=http://blacklist-scanner/api/v1/check
-            - DOMXSS_SCANNER_URL=http://hshs-domxss-scanner:2015/api/v1/domxss
+            - DOMXSS_SCANNER_URL=http://hshs-domxss-scanner:80/api/v1/domxss
             - INFOLEAK_SCANNER_URL=http://infoleak-scanner:80
-            - HEADER_SCANNER_URL=http://hshs-domxss-scanner:2015/api/v1/header
+            - HEADER_SCANNER_URL=http://hshs-domxss-scanner:80/api/v1/header
             # - MAIL_SCANNER_URL=
             - PORT_SCANNER_URL=http://ws-port-scanner:8080/start
             - TLS_SCANNER_URL=http://ws-tls-scanner:8080/start
