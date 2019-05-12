@@ -41,6 +41,13 @@ services:
             - REDIS_DB=4
             - REDIS_CACHE_DB=5
 
+    callback:
+        image: siwecos/callback-server:latest
+        ports:
+            - 3000:3000
+        volumes:
+            - ./data:/data
+
     siwecos-core-api:
         image: siwecos/siwecos-core-api:develop
         ports:
