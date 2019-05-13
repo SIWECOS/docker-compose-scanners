@@ -1,3 +1,4 @@
+# Still in development. Do not use this for a live environment
 version: '3'
 
 services:
@@ -41,9 +42,9 @@ services:
         environment:
             - APP_URL=http://siwecos-core-api
             # - BLACKLIST_SCANNER_URL=http://blacklist-scanner/api/v1/check
-            - DOMXSS_SCANNER_URL=http://hshs-domxss-scanner:2015/api/v1/domxss
-            - INFOLEAK_SCANNER_URL=http://infoleak-scanner:80
-            - HEADER_SCANNER_URL=http://hshs-domxss-scanner:2015/api/v1/header
+            - DOMXSS_SCANNER_URL=http://hshs-domxss-scanner/api/v1/domxss
+            - INFOLEAK_SCANNER_URL=http://infoleak-scanner/api/start
+            - HEADER_SCANNER_URL=http://hshs-domxss-scanner/api/v1/header
             # - MAIL_SCANNER_URL=
             - PORT_SCANNER_URL=http://ws-port-scanner:8080/start
             - TLS_SCANNER_URL=http://ws-tls-scanner:8080/start
