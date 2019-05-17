@@ -34,8 +34,10 @@ The following components are included at the moment:
 You can do a quick-scan for a bunch of domains with the running `staging` environment as follows:
 
 1. Fill the `domainList.txt` with one domain per line
-2. Run the `scan-domains.sh ALL` script
+2. Run the `scan-domains.sh` script
 
 The `scan-domain.sh` script allows different start parameters.
-You can either run `ALL` tests by using the [SIWECOS Core-API] or run a specific scanner by its name:
-`DOMXSS`,`HEADER`,`INFOLEAK`,`PORT`,`HTTPS`,`POP3`,`POP3S`,`IMAP`,`IMAPS`,`SMTP`,`SMTPS`,`VERSION`
+You can either run `ALL` tests by using the [SIWECOS Core-API] or run a specific scanner by its name: `DOMXSS`, `HEADER`, `INFOLEAK`, `PORT`, `HTTPS`, `POP3`, `POP3S`, `IMAP`, `IMAPS`, `SMTP`, `SMTPS` or `VERSION`
+
+The Results will be saved in the `data/scans.json` file.
+You can either open this file directly or check `http://localhost:3000/scans`.
