@@ -2,20 +2,15 @@ version: '3'
 
 services:
 
-    blacklist-scanner:
-        image: siwecos/ini-s-scanner:develop
-        ports:
-            - 8090:8080
+    # blacklist-scanner:
+    #     image: siwecos/ini-s-scanner:develop
+    #     ports:
+    #         - 8090:8080
 
-    domxss-scanner:
+    hshs-domxss-scanner:
         image: siwecos/hshs-domxss-scanner:develop
         ports:
             - 8091:80
-
-    hshs-scanner:
-        image: siwecos/hshs-domxss-scanner:develop
-        ports:
-            - 8092:80
 
     infoleak-scanner:
         image: siwecos/infoleak-scanner:develop
@@ -35,7 +30,7 @@ services:
     version-scanner:
         image: siwecos/version-scanner:develop
         ports:
-            - 8096:2015
+            - 8096:80
         volumes:
             - signatures:/scanner/storage/signatures
 
@@ -53,13 +48,18 @@ services:
         environment:
             - APP_URL=http://siwecos-core-api
             # - BLACKLIST_SCANNER_URL=http://blacklist-scanner:8080/api/v1/check
-            - DOMXSS_SCANNER_URL=http://domxss-scanner/api/v1/domxss
-            - HEADER_SCANNER_URL=http://hshs-scanner/api/v1/header
-            - INFOLEAK_SCANNER_URL=http://infoleak-scanner/api/start
-            # - MAIL_SCANNER_URL=
+            - DOMXSS_SCANNER_URL=http://hshs-domxss-scanner/api/v1/domxss
+            - HEADER_SCANNER_URL=http://hshs-domxss-scanner/api/v1/header
+            - INFOLEAK_SCANNER_URL=http://infoleak-scanner
             - PORT_SCANNER_URL=http://port-scanner:8080/start
-            - TLS_SCANNER_URL=http://tls-scanner:8080/start
-            - VERSION_SCANNER_URL=http://version-scanner:2015/api/v1/version
+            - HTTPS_SCANNER_URL=http://tls-scanner:8080/https
+            - POP3_SCANNER_URL=http://tls-scanner:8080/pop3
+            - POP3S_SCANNER_URL=http://tls-scanner:8080/pop3s
+            - IMAP_SCANNER_URL=http://tls-scanner:8080/imap
+            - IMAPS_SCANNER_URL=http://tls-scanner:8080/imaps
+            - SMTP_SCANNER_URL=http://tls-scanner:8080/smtp
+            - SMTPS_SCANNER_URL=http://tls-scanner:8080/smtps
+            - VERSION_SCANNER_URL=http://version-scanner/api/v1/version
             - USER_AGENT=
             - APP_DEBUG=true
             - LOG_CHANNEL=stderr
