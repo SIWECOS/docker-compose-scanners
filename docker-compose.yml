@@ -1,79 +1,63 @@
-# Still in development. Do not use this for a live environment
 version: '3'
 
 services:
 
+    # blacklist-scanner:
+    #     image: siwecos/ini-s-scanner:develop
+    #     ports:
+    #         - 8090:8080
+
     hshs-domxss-scanner:
-        image: siwecos/hshs-domxss-scanner:latest
-        depends_on:
-            - redis
-        environment:
-            - REDIS_HOST=redis
-            - REDIS_DB=2
-            - REDIS_CACHE_DB=3
+        image: siwecos/hshs-domxss-scanner:develop
+        ports:
+            - 8091:80
 
     infoleak-scanner:
-        image: siwecos/infoleak-scanner:latest
+        image: siwecos/infoleak-scanner:develop
+        ports:
+            - 8093:80
 
-    ws-port-scanner:
-        image: siwecos/ws-port-scanner:latest
+    port-scanner:
+        image: siwecos/ws-port-scanner:develop
+        ports:
+            - 8094:8080
 
-    ws-tls-scanner:
-        image: siwecos/ws-tls-scanner:latest
+    tls-scanner:
+        image: siwecos/ws-tls-scanner:develop
+        ports:
+            - 8095:8080
 
     version-scanner:
-        image: siwecos/version-scanner:latest
-        depends_on:
-            - redis
+        image: siwecos/version-scanner:develop
+        ports:
+            - 8096:80
+
+    callback:
+        image: siwecos/callback-server:latest
+        ports:
+            - 3000:3000
         volumes:
-            - signatures_production:/scanner/storage/signatures
-        environment:
-            - REDIS_HOST=redis
-            - REDIS_DB=4
-            - REDIS_CACHE_DB=5
+            - ./data:/data
 
     siwecos-core-api:
-        image: siwecos/siwecos-core-api:latest
+        image: siwecos/siwecos-core-api:develop
         ports:
             - 8000:80
-        depends_on:
-            - mariadb
-            - redis
         environment:
             - APP_URL=http://siwecos-core-api
-            # - BLACKLIST_SCANNER_URL=http://blacklist-scanner/api/v1/check
+            # - BLACKLIST_SCANNER_URL=http://blacklist-scanner:8080/api/v1/check
             - DOMXSS_SCANNER_URL=http://hshs-domxss-scanner/api/v1/domxss
-            - INFOLEAK_SCANNER_URL=http://infoleak-scanner/api/start
             - HEADER_SCANNER_URL=http://hshs-domxss-scanner/api/v1/header
-            # - MAIL_SCANNER_URL=
-            - PORT_SCANNER_URL=http://ws-port-scanner:8080/start
-            - TLS_SCANNER_URL=http://ws-tls-scanner:8080/start
-            - VERSION_SCANNER_URL=http://version-scanner:2015/api/v1/version
-            - USER_AGENT=
-            - REDIS_HOST=redis
-            - REDIS_DB=0
-            - REDIS_CACHE_DB=1
-            - DB_HOST=mariadb
-            - DB_USERNAME=siwecos
-            - DB_PASSWORD=siwecos
-            - DB_DATABASE=coreApi
-            - REDIS_CLIENT=phpredis
+            - INFOLEAK_SCANNER_URL=http://infoleak-scanner
+            - PORT_SCANNER_URL=http://port-scanner:8080/start
+            - HTTPS_SCANNER_URL=http://tls-scanner:8080/https
+            - POP3_SCANNER_URL=http://tls-scanner:8080/pop3
+            - POP3S_SCANNER_URL=http://tls-scanner:8080/pop3s
+            - IMAP_SCANNER_URL=http://tls-scanner:8080/imap
+            - IMAPS_SCANNER_URL=http://tls-scanner:8080/imaps
+            - SMTP_SCANNER_URL=http://tls-scanner:8080/smtp
+            - SMTPS_SCANNER_URL=http://tls-scanner:8080/smtps
+            - VERSION_SCANNER_URL=http://version-scanner/api/v1/version
+            # - USER_AGENT='Your Custom User-Agent Header'
+            # - APP_DEBUG=true
             - LOG_CHANNEL=stderr
-
-
-    mariadb:
-        image: mariadb:latest
-        volumes:
-            - db_production:/var/lib/mysql
-        environment:
-            - MYSQL_ROOT_PASSWORD=siwecosRoot
-            - MYSQL_USER=siwecos
-            - MYSQL_PASSWORD=siwecos
-            - MYSQL_DATABASE=coreApi
-
-    redis:
-        image: redis:latest
-
-volumes:
-    db_production:
-    signatures_production:
