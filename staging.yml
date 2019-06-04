@@ -1,0 +1,92 @@
+# Staging environment
+version: '3'
+
+services:
+
+    hshs-domxss-scanner:
+        image: siwecos/hshs-domxss-scanner:develop
+        depends_on:
+            - redis
+        environment:
+            - REDIS_HOST=redis
+            - REDIS_DB=2
+            - REDIS_CACHE_DB=3
+
+    infoleak-scanner:
+        image: siwecos/infoleak-scanner:develop
+        depends_on:
+            - redis
+        environment:
+            - REDIS_HOST=redis
+            - REDIS_DB=4
+            - REDIS_CACHE_DB=5
+            - REDIS_CLIENT=phpredis
+
+    ws-port-scanner:
+        image: siwecos/ws-port-scanner:develop
+
+    ws-tls-scanner:
+        image: siwecos/ws-tls-scanner:develop
+
+    version-scanner:
+        image: siwecos/version-scanner:develop
+        depends_on:
+            - redis
+        volumes:
+            - signatures_staging:/scanner/storage/signatures
+        environment:
+            - REDIS_HOST=redis
+            - REDIS_DB=6
+            - REDIS_CACHE_DB=7
+            - REDIS_CLIENT=phpredis
+
+    siwecos-core-api:
+        image: siwecos/siwecos-core-api:develop
+        ports:
+            - 8000:80
+        depends_on:
+            - mariadb
+            - redis
+        environment:
+            - APP_URL=http://siwecos-core-api
+            # - BLACKLIST_SCANNER_URL=http://blacklist-scanner/api/v1/check
+            - DOMXSS_SCANNER_URL=http://hshs-domxss-scanner/api/v1/domxss
+            - INFOLEAK_SCANNER_URL=http://infoleak-scanner/api/start
+            - HEADER_SCANNER_URL=http://hshs-domxss-scanner/api/v1/header
+            - PORT_SCANNER_URL=http://ws-port-scanner:8080/start
+            - HTTPS_SCANNER_URL=http://tls-scanner:8080/https
+            - POP3_SCANNER_URL=http://tls-scanner:8080/pop3
+            - POP3S_SCANNER_URL=http://tls-scanner:8080/pop3s
+            - IMAP_SCANNER_URL=http://tls-scanner:8080/imap
+            - IMAPS_SCANNER_URL=http://tls-scanner:8080/imaps
+            - SMTP_SCANNER_URL=http://tls-scanner:8080/smtp
+            - SMTPS_SCANNER_URL=http://tls-scanner:8080/smtps
+            - VERSION_SCANNER_URL=http://version-scanner/api/v1/version
+            # - USER_AGENT=
+            - REDIS_HOST=redis
+            - REDIS_DB=0
+            - REDIS_CACHE_DB=1
+            - DB_HOST=mariadb
+            - DB_USERNAME=siwecos
+            - DB_PASSWORD=siwecos
+            - DB_DATABASE=coreApi
+            - REDIS_CLIENT=phpredis
+            - LOG_CHANNEL=stdout
+
+
+    mariadb:
+        image: mariadb:latest
+        volumes:
+            - db_staging:/var/lib/mysql
+        environment:
+            - MYSQL_ROOT_PASSWORD=siwecosRoot
+            - MYSQL_USER=siwecos
+            - MYSQL_PASSWORD=siwecos
+            - MYSQL_DATABASE=coreApi
+
+    redis:
+        image: redis:latest
+
+volumes:
+    db_staging:
+    signatures_staging:
