@@ -22,10 +22,10 @@ services:
             - REDIS_CACHE_DB=5
             - REDIS_CLIENT=phpredis
 
-    ws-port-scanner:
+    port-scanner:
         image: siwecos/ws-port-scanner:develop
 
-    ws-tls-scanner:
+    tls-scanner:
         image: siwecos/ws-tls-scanner:develop
 
     version-scanner:
@@ -53,7 +53,7 @@ services:
             - DOMXSS_SCANNER_URL=http://hshs-domxss-scanner/api/v1/domxss
             - INFOLEAK_SCANNER_URL=http://infoleak-scanner/api/start
             - HEADER_SCANNER_URL=http://hshs-domxss-scanner/api/v1/header
-            - PORT_SCANNER_URL=http://ws-port-scanner:8080/start
+            - PORT_SCANNER_URL=http://port-scanner:8080/start
             - HTTPS_SCANNER_URL=http://tls-scanner:8080/https
             - POP3_SCANNER_URL=http://tls-scanner:8080/pop3
             - POP3S_SCANNER_URL=http://tls-scanner:8080/pop3s
