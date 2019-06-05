@@ -1,10 +1,9 @@
-# Staging environment
 version: '3'
 
 services:
 
     hshs-domxss-scanner:
-        image: siwecos/hshs-domxss-scanner:develop
+        image: siwecos/hshs-domxss-scanner:latest
         depends_on:
             - redis
         environment:
@@ -13,7 +12,7 @@ services:
             - REDIS_CACHE_DB=3
 
     # infoleak-scanner:
-    #     image: siwecos/infoleak-scanner:develop
+    #     image: siwecos/infoleak-scanner:latest
     #     depends_on:
     #         - redis
     #     environment:
@@ -23,17 +22,17 @@ services:
     #         - REDIS_CLIENT=phpredis
 
     port-scanner:
-        image: siwecos/ws-port-scanner:develop
+        image: siwecos/ws-port-scanner:latest
 
     tls-scanner:
-        image: siwecos/ws-tls-scanner:develop
+        image: siwecos/ws-tls-scanner:latest
 
     version-scanner:
-        image: siwecos/version-scanner:develop
+        image: siwecos/version-scanner:latest
         depends_on:
             - redis
         volumes:
-            - signatures_staging:/scanner/storage/signatures
+            - signatures:/scanner/storage/signatures
         environment:
             - REDIS_HOST=redis
             - REDIS_DB=6
@@ -41,7 +40,7 @@ services:
             - REDIS_CLIENT=phpredis
 
     siwecos-core-api:
-        image: siwecos/siwecos-core-api:develop
+        image: siwecos/siwecos-core-api:latest
         ports:
             - 8000:80
         depends_on:
@@ -74,11 +73,10 @@ services:
             - REDIS_CLIENT=phpredis
             - LOG_CHANNEL=stderr
 
-
     mariadb:
-        image: mariadb:latest
+        image: mariadb
         volumes:
-            - db_staging:/var/lib/mysql
+            - db:/var/lib/mysql
         environment:
             - MYSQL_ROOT_PASSWORD=siwecosRoot
             - MYSQL_USER=siwecos
@@ -86,8 +84,13 @@ services:
             - MYSQL_DATABASE=coreApi
 
     redis:
-        image: redis:latest
+        image: redis
+
+    watchtower:
+        image: containrrr/watchtower
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock
 
 volumes:
-    db_staging:
-    signatures_staging:
+    db:
+    signatures:
