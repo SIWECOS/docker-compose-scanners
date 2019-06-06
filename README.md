@@ -23,7 +23,7 @@ The following components are included at the moment:
 | --------------------------------------------------------------------- | ------------ |
 | [Callback Server](https://github.com/SIWECOS/callback-server)         | 3000         |
 | [SIWECOS Core-API](https://github.com/SIWECOS/siwecos-core-api)       | 8000         |
-| [BLACKLIST Scanner](https://github.com/SIWECOS/Ini-S-Scanner)         | 8090         |
+| [INI-S Scanner](https://github.com/SIWECOS/Ini-S-Scanner)             | 8090         |
 | [HSHS-DOMXSS Scanner](https://github.com/SIWECOS/HSHS-DOMXSS-Scanner) | 8091         |
 | [INFOLEAK Scanner](https://github.com/SIWECOS/InfoLeak-Scanner)       | 8093         |
 | [PORT Scanner](https://github.com/SIWECOS/WS-Port-Scanner)            | 8094         |
