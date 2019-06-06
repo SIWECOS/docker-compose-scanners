@@ -22,7 +22,7 @@ services:
             - REDIS_CACHE_DB=3
 
     ini-s-scanner:
-        image: siwecos/ini-s-scanner:develop
+        image: siwecos/ini-s-scanner:latest
         volumes:
             - blacklists:/storage
 
