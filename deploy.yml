@@ -11,6 +11,11 @@ services:
             - REDIS_DB=2
             - REDIS_CACHE_DB=3
 
+    ini-s-scanner:
+        image: siwecos/ini-s-scanner:develop
+        volumes:
+            - blacklists:/storage
+
     # infoleak-scanner:
     #     image: siwecos/infoleak-scanner:latest
     #     depends_on:
@@ -48,18 +53,13 @@ services:
             - redis
         environment:
             - APP_URL=http://siwecos-core-api
-            # - BLACKLIST_SCANNER_URL=http://blacklist-scanner/api/v1/check
+            - INI_S_SCANNER_URL=http://ini-s-scanner/api/v1/check
             - DOMXSS_SCANNER_URL=http://hshs-domxss-scanner/api/v1/domxss
             # - INFOLEAK_SCANNER_URL=http://infoleak-scanner/api/start
             - HEADER_SCANNER_URL=http://hshs-domxss-scanner/api/v1/header
             - PORT_SCANNER_URL=http://port-scanner:8080/start
             - HTTPS_SCANNER_URL=http://tls-scanner:8080/https
-            - POP3_SCANNER_URL=http://tls-scanner:8080/pop3
-            - POP3S_SCANNER_URL=http://tls-scanner:8080/pop3s
-            - IMAP_SCANNER_URL=http://tls-scanner:8080/imap
-            - IMAPS_SCANNER_URL=http://tls-scanner:8080/imaps
-            - SMTP_SCANNER_URL=http://tls-scanner:8080/smtp
-            - SMTPS_SCANNER_URL=http://tls-scanner:8080/smtps
+            # - MAIL_SCANNER_URL=
             - VERSION_SCANNER_URL=http://version-scanner/api/v1/version
             # - USER_AGENT=
             - REDIS_HOST=redis
@@ -94,3 +94,4 @@ services:
 volumes:
     db:
     signatures:
+    blacklists:
