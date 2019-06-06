@@ -1,0 +1,12 @@
+0.0.0.0:80 {
+
+    # ipfilter / {
+    #     rule allow
+    #     ip 127.0.0.1
+    #     blockpage /srv/blockpage.html
+    # }
+
+    proxy / siwecos-core-api {
+        transparent
+    }
+}
