@@ -3,7 +3,7 @@ version: '3'
 services:
 
     caddy:
-        image: siwecos/caddy:latest
+        image: siwecos/caddy
         ports:
             - 80:80
             - 443:443
