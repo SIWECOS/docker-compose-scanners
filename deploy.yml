@@ -26,15 +26,15 @@ services:
         volumes:
             - blacklists:/storage
 
-    # infoleak-scanner:
-    #     image: siwecos/infoleak-scanner:latest
-    #     depends_on:
-    #         - redis
-    #     environment:
-    #         - REDIS_HOST=redis
-    #         - REDIS_DB=4
-    #         - REDIS_CACHE_DB=5
-    #         - REDIS_CLIENT=phpredis
+    infoleak-scanner:
+        image: siwecos/infoleak-scanner:latest
+        depends_on:
+            - redis
+        environment:
+            - REDIS_HOST=redis
+            - REDIS_DB=4
+            - REDIS_CACHE_DB=5
+            - REDIS_CLIENT=phpredis
 
     port-scanner:
         image: siwecos/ws-port-scanner:latest
@@ -63,7 +63,7 @@ services:
             - APP_URL=http://siwecos-core-api
             - INI_S_SCANNER_URL=http://ini-s-scanner/api/v1/check
             - DOMXSS_SCANNER_URL=http://hshs-domxss-scanner/api/v1/domxss
-            # - INFOLEAK_SCANNER_URL=http://infoleak-scanner/api/start
+            - INFOLEAK_SCANNER_URL=http://infoleak-scanner/api/v2/start
             - HEADER_SCANNER_URL=http://hshs-domxss-scanner/api/v1/header
             - PORT_SCANNER_URL=http://port-scanner:8080/start
             - HTTPS_SCANNER_URL=http://tls-scanner:8080/https
