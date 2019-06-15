@@ -61,7 +61,7 @@ services:
             - redis
         environment:
             - APP_URL=http://siwecos-core-api
-            - INI_S_SCANNER_URL=http://ini-s-scanner/api/v1/check
+            - INI_S_SCANNER_URL=http://ini-s-scanner:8080/api/v1/check
             - DOMXSS_SCANNER_URL=http://hshs-domxss-scanner/api/v1/domxss
             - INFOLEAK_SCANNER_URL=http://infoleak-scanner/api/v2/start
             - HEADER_SCANNER_URL=http://hshs-domxss-scanner/api/v1/header
