@@ -2,16 +2,6 @@ version: '3'
 
 services:
 
-    caddy:
-        image: siwecos/caddy
-        ports:
-            - 80:80
-            - 443:443
-        volumes:
-            - ./Caddyfile:/etc/Caddyfile:ro
-            - caddy_certs:/root/.caddy
-            - ./blockpage.html:/srv/blockpage.html:ro
-
     hshs-domxss-scanner:
         image: siwecos/hshs-domxss-scanner:latest
         depends_on:
@@ -56,6 +46,8 @@ services:
 
     siwecos-core-api:
         image: siwecos/siwecos-core-api:latest
+        ports:
+            - 127.0.0.1:80:80
         depends_on:
             - mariadb
             - redis
