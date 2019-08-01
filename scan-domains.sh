@@ -8,7 +8,7 @@ SCANNER_URL[DOMXSS]=http://localhost:8091/api/v1/domxss
 SCANNER_URL[HEADER]=http://localhost:8091/api/v1/header
 SCANNER_URL[INFOLEAK]=http://localhost:8093/api/v2/start
 SCANNER_URL[PORT]=http://localhost:8094/start
-SCANNER_URL[HTTPS]=http://localhost:8095/https
+SCANNER_URL[TLS]=http://localhost:8095/tls
 # SCANNER_URL[MAIL]=
 SCANNER_URL[VERSION]=http://localhost:8096/api/v1/version
 
