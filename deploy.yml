@@ -58,7 +58,7 @@ services:
             - INFOLEAK_SCANNER_URL=http://infoleak-scanner/api/v2/start
             - HEADER_SCANNER_URL=http://hshs-domxss-scanner/api/v1/header
             - PORT_SCANNER_URL=http://port-scanner:8080/start
-            - HTTPS_SCANNER_URL=http://tls-scanner:8080/https
+            - TLS_SCANNER_URL=http://tls-scanner:8080/https
             # - MAIL_SCANNER_URL=
             - VERSION_SCANNER_URL=http://version-scanner/api/v1/version
             # - USER_AGENT=
