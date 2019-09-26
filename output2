@@ -1,0 +1,1156 @@
+Starting docker-compose-scanners_ws-port-scanner_1 ... 
+Starting docker-compose-scanners_infoleak-scanner_1 ... 
+Starting docker-compose-scanners_redis_1            ... 
+Starting docker-compose-scanners_ws-tls-scanner_1   ... 
+Starting docker-compose-scanners_mariadb_1          ... 
+[2A[2KStarting docker-compose-scanners_ws-tls-scanner_1   ... [32mdone[0m[2B[5A[2KStarting docker-compose-scanners_ws-port-scanner_1  ... [32mdone[0m[5B[3A[2KStarting docker-compose-scanners_redis_1            ... [32mdone[0m[3BStarting docker-compose-scanners_version-scanner_1  ... 
+Starting docker-compose-scanners_hshs-domxss-scanner_1 ... 
+[6A[2KStarting docker-compose-scanners_infoleak-scanner_1    ... [32mdone[0m[6B[3A[2KStarting docker-compose-scanners_mariadb_1             ... [32mdone[0m[3BStarting docker-compose-scanners_siwecos-core-api_1    ... 
+[2A[2KStarting docker-compose-scanners_hshs-domxss-scanner_1 ... [32mdone[0m[2B[1A[2KStarting docker-compose-scanners_siwecos-core-api_1    ... [32mdone[0m[1B[3A[2KStarting docker-compose-scanners_version-scanner_1     ... [32mdone[0m[3BAttaching to docker-compose-scanners_ws-tls-scanner_1, docker-compose-scanners_ws-port-scanner_1, docker-compose-scanners_redis_1, docker-compose-scanners_infoleak-scanner_1, docker-compose-scanners_mariadb_1, docker-compose-scanners_hshs-domxss-scanner_1, docker-compose-scanners_siwecos-core-api_1, docker-compose-scanners_version-scanner_1
+[35minfoleak-scanner_1     |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.21.0.5. Set the 'ServerName' directive globally to suppress this message
+[35minfoleak-scanner_1     |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.21.0.5. Set the 'ServerName' directive globally to suppress this message
+[35minfoleak-scanner_1     |[0m [Tue May 07 18:51:47.058589 2019] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.25 (Debian) PHP/7.2.17 configured -- resuming normal operations
+[35minfoleak-scanner_1     |[0m [Tue May 07 18:51:47.058679 2019] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[32mredis_1                |[0m 1:C 07 May 2019 18:51:46.653 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[32mredis_1                |[0m 1:C 07 May 2019 18:51:46.653 # Redis version=5.0.4, bits=64, commit=00000000, modified=0, pid=1, just started
+[32mredis_1                |[0m 1:C 07 May 2019 18:51:46.653 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[31mmariadb_1              |[0m 2019-05-07 18:51:48 0 [Note] mysqld (mysqld 10.3.14-MariaDB-1:10.3.14+maria~bionic) starting as process 1 ...
+[31mmariadb_1              |[0m 2019-05-07 18:51:48 0 [Note] InnoDB: Using Linux native AIO
+[31mmariadb_1              |[0m 2019-05-07 18:51:48 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+[31mmariadb_1              |[0m 2019-05-07 18:51:48 0 [Note] InnoDB: Uses event mutexes
+[31mmariadb_1              |[0m 2019-05-07 18:51:48 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+[32mredis_1                |[0m 1:M 07 May 2019 18:51:46.656 * Running mode=standalone, port=6379.
+[32mredis_1                |[0m 1:M 07 May 2019 18:51:46.656 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[32mredis_1                |[0m 1:M 07 May 2019 18:51:46.656 # Server initialized
+[32mredis_1                |[0m 1:M 07 May 2019 18:51:46.656 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[32mredis_1                |[0m 1:M 07 May 2019 18:51:46.656 * DB loaded from disk: 0.000 seconds
+[32mredis_1                |[0m 1:M 07 May 2019 18:51:46.656 * Ready to accept connections
+[31mmariadb_1              |[0m 2019-05-07 18:51:48 0 [Note] InnoDB: Number of pools: 1
+[31mmariadb_1              |[0m 2019-05-07 18:51:48 0 [Note] InnoDB: Using SSE2 crc32 instructions
+[31mmariadb_1              |[0m 2019-05-07 18:51:48 0 [Note] InnoDB: Initializing buffer pool, total size = 256M, instances = 1, chunk size = 128M
+[31mmariadb_1              |[0m 2019-05-07 18:51:48 0 [Note] InnoDB: Completed initialization of buffer pool
+[31mmariadb_1              |[0m 2019-05-07 18:51:48 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+[31mmariadb_1              |[0m 2019-05-07 18:51:48 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+[31mmariadb_1              |[0m 2019-05-07 18:51:48 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+[31mmariadb_1              |[0m 2019-05-07 18:51:48 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+[31mmariadb_1              |[0m 2019-05-07 18:51:48 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+[31mmariadb_1              |[0m 2019-05-07 18:51:48 0 [Note] InnoDB: Waiting for purge to start
+[31mmariadb_1              |[0m 2019-05-07 18:51:48 0 [Note] InnoDB: 10.3.14 started; log sequence number 2377599; transaction id 1236
+[31mmariadb_1              |[0m 2019-05-07 18:51:48 0 [Note] Plugin 'FEEDBACK' is disabled.
+[31mmariadb_1              |[0m 2019-05-07 18:51:48 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+[31mmariadb_1              |[0m 2019-05-07 18:51:48 0 [Note] Server socket created on IP: '::'.
+[31mmariadb_1              |[0m 2019-05-07 18:51:48 0 [Warning] 'proxies_priv' entry '@% root@602ad4e4ad41' ignored in --skip-name-resolve mode.
+[31mmariadb_1              |[0m 2019-05-07 18:51:48 0 [Note] Reading of all Master_info entries succeded
+[31mmariadb_1              |[0m 2019-05-07 18:51:48 0 [Note] Added new Master_info '' to hash table
+[31mmariadb_1              |[0m 2019-05-07 18:51:48 0 [Note] mysqld: ready for connections.
+[31mmariadb_1              |[0m Version: '10.3.14-MariaDB-1:10.3.14+maria~bionic'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
+[31mmariadb_1              |[0m 2019-05-07 18:51:48 0 [Note] InnoDB: Buffer pool(s) load completed at 190507 18:51:48
+[34mhshs-domxss-scanner_1  |[0m Application key set successfully.
+[36;1msiwecos-core-api_1     |[0m Application key set successfully.
+[34mhshs-domxss-scanner_1  |[0m Configuration cache cleared!
+[34mhshs-domxss-scanner_1  |[0m Configuration cached successfully!
+[36;1msiwecos-core-api_1     |[0m Configuration cache cleared!
+[36;1msiwecos-core-api_1     |[0m Configuration cached successfully!
+[34mhshs-domxss-scanner_1  |[0m Route cache cleared!
+[34mhshs-domxss-scanner_1  |[0m Routes cached successfully!
+[33;1mversion-scanner_1      |[0m 2019-05-07 18:51:49,434 CRIT Supervisor running as root (no user in config file)
+[33;1mversion-scanner_1      |[0m 2019-05-07 18:51:49,446 INFO supervisord started with pid 1
+[36;1msiwecos-core-api_1     |[0m Route cache cleared!
+[36;1msiwecos-core-api_1     |[0m Routes cached successfully!
+[36;1msiwecos-core-api_1     |[0m Nothing to migrate.
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:51:50,203 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:51:50,211 INFO supervisord started with pid 28
+[33;1mversion-scanner_1      |[0m 2019-05-07 18:51:50,449 INFO spawned: 'laravel-worker_00' with pid 8
+[33;1mversion-scanner_1      |[0m 2019-05-07 18:51:50,453 INFO spawned: 'laravel-worker_01' with pid 9
+[33;1mversion-scanner_1      |[0m 2019-05-07 18:51:50,503 INFO spawned: 'laravel-worker_02' with pid 10
+[33;1mversion-scanner_1      |[0m 2019-05-07 18:51:50,506 INFO spawned: 'laravel-worker_03' with pid 11
+[33;1mversion-scanner_1      |[0m 2019-05-07 18:51:50,524 INFO spawned: 'laravel-worker_04' with pid 12
+[33;1mversion-scanner_1      |[0m 2019-05-07 18:51:50,529 INFO spawned: 'redis' with pid 13
+[33;1mversion-scanner_1      |[0m 2019-05-07 18:51:50,603 INFO spawned: 'caddy' with pid 14
+[33;1mversion-scanner_1      |[0m 13:C 07 May 18:51:50.679 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[33;1mversion-scanner_1      |[0m 13:C 07 May 18:51:50.712 # Redis version=4.0.11, bits=64, commit=2857805f, modified=0, pid=13, just started
+[33;1mversion-scanner_1      |[0m 13:C 07 May 18:51:50.729 # Warning: no config file specified, using the default config. In order to specify a config file use /usr/bin/redis-server /path/to/redis.conf
+[33;1mversion-scanner_1      |[0m 13:M 07 May 18:51:50.734 * Running mode=standalone, port=6379.
+[33;1mversion-scanner_1      |[0m 13:M 07 May 18:51:50.741 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[33;1mversion-scanner_1      |[0m 13:M 07 May 18:51:50.742 # Server initialized
+[33;1mversion-scanner_1      |[0m 13:M 07 May 18:51:50.766 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[33;1mversion-scanner_1      |[0m 13:M 07 May 18:51:50.779 * DB loaded from disk: 0.000 seconds
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:51:50,786 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+[33;1mversion-scanner_1      |[0m 13:M 07 May 18:51:50.788 * Ready to accept connections
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:51:50,842 INFO supervisord started with pid 35
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:51:51,218 INFO spawned: 'laravel-server_00' with pid 31
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:51:51,233 INFO spawned: 'redis-server' with pid 32
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:51:51,264 INFO spawned: 'laravel-scheduler' with pid 34
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:51:51,354 INFO spawned: 'laravel-worker_07' with pid 42
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:51:51,448 INFO spawned: 'laravel-worker_06' with pid 43
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:51:51,461 INFO spawned: 'laravel-worker_04' with pid 48
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:51:51,534 INFO spawned: 'laravel-worker_03' with pid 50
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:51:51,584 INFO spawned: 'laravel-worker_00' with pid 51
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:51:51,646 INFO spawned: 'laravel-worker_02' with pid 52
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:51.664 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.40
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:51.670 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Apr 10 2019 14:31:19 UTC
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:51.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.40.0
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:51.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:51.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.9.125-linuxkit
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:51.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:51.698 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-1.8-openjdk/jre
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:51.699 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_201-b08
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:51.699 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:51.711 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/local/tomcat
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:51.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/local/tomcat
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:51.713 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/usr/local/tomcat/conf/logging.properties
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:51.713 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:51.721 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:51.722 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:51.723 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:51.723 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:51.724 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/usr/local/tomcat
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:51:51,734 INFO spawned: 'laravel-worker_01' with pid 53
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:51:51,739 INFO spawned: 'laravel-worker_05' with pid 54
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:51.725 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/usr/local/tomcat
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:51.742 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/usr/local/tomcat/temp
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:51.745 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:51.745 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:51.747 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[34mhshs-domxss-scanner_1  |[0m 32:C 07 May 18:51:51.349 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mhshs-domxss-scanner_1  |[0m                 _._                                                  
+[34mhshs-domxss-scanner_1  |[0m            _.-``__ ''-._                                             
+[34mhshs-domxss-scanner_1  |[0m       _.-``    `.  `_.  ''-._           Redis 3.2.6 (00000000/0) 64 bit
+[34mhshs-domxss-scanner_1  |[0m   .-`` .-```.  ```\/    _.,_ ''-._                                   
+[34mhshs-domxss-scanner_1  |[0m  (    '      ,       .-`  | `,    )     Running in standalone mode
+[34mhshs-domxss-scanner_1  |[0m  |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+[34mhshs-domxss-scanner_1  |[0m  |    `-._   `._    /     _.-'    |     PID: 32
+[34mhshs-domxss-scanner_1  |[0m   `-._    `-._  `-./  _.-'    _.-'                                   
+[34mhshs-domxss-scanner_1  |[0m  |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+[34mhshs-domxss-scanner_1  |[0m  |    `-._`-._        _.-'_.-'    |           http://redis.io        
+[34mhshs-domxss-scanner_1  |[0m   `-._    `-._`-.__.-'_.-'    _.-'                                   
+[34mhshs-domxss-scanner_1  |[0m  |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+[34mhshs-domxss-scanner_1  |[0m  |    `-._`-._        _.-'_.-'    |                                  
+[34mhshs-domxss-scanner_1  |[0m   `-._    `-._`-.__.-'_.-'    _.-'                                   
+[34mhshs-domxss-scanner_1  |[0m       `-._    `-.__.-'    _.-'                                       
+[34mhshs-domxss-scanner_1  |[0m           `-._        _.-'                                           
+[34mhshs-domxss-scanner_1  |[0m               `-.__.-'                                               
+[34mhshs-domxss-scanner_1  |[0m 
+[34mhshs-domxss-scanner_1  |[0m 32:M 07 May 18:51:51.450 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mhshs-domxss-scanner_1  |[0m 32:M 07 May 18:51:51.450 # Server started, Redis version 3.2.6
+[34mhshs-domxss-scanner_1  |[0m 32:M 07 May 18:51:51.450 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mhshs-domxss-scanner_1  |[0m 32:M 07 May 18:51:51.450 * The server is now ready to accept connections on port 6379
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:51:51,783 DEBG 'redis-server' stdout output:
+[34mhshs-domxss-scanner_1  |[0m 32:C 07 May 18:51:51.349 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mhshs-domxss-scanner_1  |[0m                 _._                                                  
+[34mhshs-domxss-scanner_1  |[0m            _.-``__ ''-._                                             
+[34mhshs-domxss-scanner_1  |[0m       _.-``    `.  `_.  ''-._           Redis 3.2.6 (00000000/0) 64 bit
+[34mhshs-domxss-scanner_1  |[0m   .-`` .-```.  ```\/    _.,_ ''-._                                   
+[34mhshs-domxss-scanner_1  |[0m  (    '      ,       .-`  | `,    )     Running in standalone mode
+[34mhshs-domxss-scanner_1  |[0m  |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+[34mhshs-domxss-scanner_1  |[0m  |    `-._   `._    /     _.-'    |     PID: 32
+[34mhshs-domxss-scanner_1  |[0m   `-._    `-._  `-./  _.-'    _.-'                                   
+[34mhshs-domxss-scanner_1  |[0m  |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+[34mhshs-domxss-scanner_1  |[0m  |    `-._`-._        _.-'_.-'    |           http://redis.io        
+[34mhshs-domxss-scanner_1  |[0m   `-._    `-._`-.__.-'_.-'    _.-'                                   
+[34mhshs-domxss-scanner_1  |[0m  |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+[34mhshs-domxss-scanner_1  |[0m  |    `-._`-._        _.-'_.-'    |                                  
+[34mhshs-domxss-scanner_1  |[0m   `-._    `-._`-.__.-'_.-'    _.-'                                   
+[34mhshs-domxss-scanner_1  |[0m       `-._    `-.__.-'    _.-'                                       
+[34mhshs-domxss-scanner_1  |[0m           `-._        _.-'                                           
+[34mhshs-domxss-scanner_1  |[0m               `-.__.-'                                               
+[34mhshs-domxss-scanner_1  |[0m 
+[34mhshs-domxss-scanner_1  |[0m 32:M 07 May 18:51:51.450 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mhshs-domxss-scanner_1  |[0m 32:M 07 May 18:51:51.450 # Server started, Redis version 3.2.6
+[34mhshs-domxss-scanner_1  |[0m 32:M 07 May 18:51:51.450 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mhshs-domxss-scanner_1  |[0m 32:M 07 May 18:51:51.450 * The server is now ready to accept connections on port 6379
+[34mhshs-domxss-scanner_1  |[0m 
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:51.795 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1b  26 Feb 2019]
+[33;1mversion-scanner_1      |[0m 2019-05-07 18:51:51,801 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[33;1mversion-scanner_1      |[0m 2019-05-07 18:51:51,802 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[33;1mversion-scanner_1      |[0m 2019-05-07 18:51:51,803 INFO success: laravel-worker_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[33;1mversion-scanner_1      |[0m 2019-05-07 18:51:51,821 INFO success: laravel-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[33;1mversion-scanner_1      |[0m 2019-05-07 18:51:51,821 INFO success: laravel-worker_04 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[33;1mversion-scanner_1      |[0m 2019-05-07 18:51:51,822 INFO success: redis entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[33;1mversion-scanner_1      |[0m 2019-05-07 18:51:51,823 INFO success: caddy entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:51:51,855 INFO spawned: 'laravel-scheduler' with pid 38
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:51:51,916 INFO spawned: 'laravel-worker_03' with pid 40
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:51:51,961 INFO spawned: 'laravel-worker_07' with pid 41
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:51:52,003 INFO spawned: 'laravel-worker_00' with pid 42
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:51:52,058 INFO spawned: 'laravel-worker_01' with pid 43
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:52.029 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.40
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:52.060 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Apr 10 2019 14:31:19 UTC
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:52.062 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.40.0
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:52.071 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:52.071 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.9.125-linuxkit
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:52.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:52.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-1.8-openjdk/jre
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:52.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_201-b08
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:52.081 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:52.081 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/local/tomcat
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:52.083 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/local/tomcat
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:52.092 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/usr/local/tomcat/conf/logging.properties
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:52.092 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:52.094 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:52.095 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:52.101 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:52.101 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:52.106 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/usr/local/tomcat
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:52.107 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/usr/local/tomcat
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:52.107 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/usr/local/tomcat/temp
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:52.110 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:52.131 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:52.141 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:51:52,152 INFO spawned: 'laravel-worker_06' with pid 44
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:52.157 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1b  26 Feb 2019]
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:51:52,213 INFO spawned: 'laravel-worker_04' with pid 45
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:51:52,229 INFO spawned: 'laravel-worker_02' with pid 46
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:51:52,262 INFO spawned: 'laravel-worker_05' with pid 47
+[33;1mversion-scanner_1      |[0m Activating privacy features... done.
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:51:52,335 INFO spawned: 'redis-server' with pid 48
+[33;1mversion-scanner_1      |[0m http://0.0.0.0:2015
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:51:52,403 INFO spawned: 'laravel-server_00' with pid 49
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:51:52,449 DEBG 'laravel-server_00' stderr output:
+[34mhshs-domxss-scanner_1  |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.21.0.7. Set the 'ServerName' directive globally to suppress this message
+[34mhshs-domxss-scanner_1  |[0m 
+[34mhshs-domxss-scanner_1  |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.21.0.7. Set the 'ServerName' directive globally to suppress this message
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:51:52,455 INFO success: laravel-server_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:51:52,455 INFO success: redis-server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:51:52,456 INFO success: laravel-scheduler entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:51:52,459 INFO success: laravel-worker_07 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:51:52,480 INFO success: laravel-worker_06 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:51:52,481 INFO success: laravel-worker_04 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[36;1msiwecos-core-api_1     |[0m 48:C 07 May 18:51:52.594 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36;1msiwecos-core-api_1     |[0m                 _._                                                  
+[36;1msiwecos-core-api_1     |[0m            _.-``__ ''-._                                             
+[36;1msiwecos-core-api_1     |[0m       _.-``    `.  `_.  ''-._           Redis 3.2.6 (00000000/0) 64 bit
+[36;1msiwecos-core-api_1     |[0m   .-`` .-```.  ```\/    _.,_ ''-._                                   
+[36;1msiwecos-core-api_1     |[0m  (    '      ,       .-`  | `,    )     Running in standalone mode
+[36;1msiwecos-core-api_1     |[0m  |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+[36;1msiwecos-core-api_1     |[0m  |    `-._   `._    /     _.-'    |     PID: 48
+[36;1msiwecos-core-api_1     |[0m   `-._    `-._  `-./  _.-'    _.-'                                   
+[36;1msiwecos-core-api_1     |[0m  |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+[36;1msiwecos-core-api_1     |[0m  |    `-._`-._        _.-'_.-'    |           http://redis.io        
+[36;1msiwecos-core-api_1     |[0m   `-._    `-._`-.__.-'_.-'    _.-'                                   
+[36;1msiwecos-core-api_1     |[0m  |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+[36;1msiwecos-core-api_1     |[0m  |    `-._`-._        _.-'_.-'    |                                  
+[36;1msiwecos-core-api_1     |[0m   `-._    `-._`-.__.-'_.-'    _.-'                                   
+[36;1msiwecos-core-api_1     |[0m       `-._    `-.__.-'    _.-'                                       
+[36;1msiwecos-core-api_1     |[0m           `-._        _.-'                                           
+[36;1msiwecos-core-api_1     |[0m               `-.__.-'                                               
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m 48:M 07 May 18:51:52.597 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[36;1msiwecos-core-api_1     |[0m 48:M 07 May 18:51:52.597 # Server started, Redis version 3.2.6
+[36;1msiwecos-core-api_1     |[0m 48:M 07 May 18:51:52.597 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36;1msiwecos-core-api_1     |[0m 48:M 07 May 18:51:52.597 * The server is now ready to accept connections on port 6379
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:51:52,599 DEBG 'redis-server' stdout output:
+[36;1msiwecos-core-api_1     |[0m 48:C 07 May 18:51:52.594 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36;1msiwecos-core-api_1     |[0m                 _._                                                  
+[36;1msiwecos-core-api_1     |[0m            _.-``__ ''-._                                             
+[36;1msiwecos-core-api_1     |[0m       _.-``    `.  `_.  ''-._           Redis 3.2.6 (00000000/0) 64 bit
+[36;1msiwecos-core-api_1     |[0m   .-`` .-```.  ```\/    _.,_ ''-._                                   
+[36;1msiwecos-core-api_1     |[0m  (    '      ,       .-`  | `,    )     Running in standalone mode
+[36;1msiwecos-core-api_1     |[0m  |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+[36;1msiwecos-core-api_1     |[0m  |    `-._   `._    /     _.-'    |     PID: 48
+[36;1msiwecos-core-api_1     |[0m   `-._    `-._  `-./  _.-'    _.-'                                   
+[36;1msiwecos-core-api_1     |[0m  |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+[36;1msiwecos-core-api_1     |[0m  |    `-._`-._        _.-'_.-'    |           http://redis.io        
+[36;1msiwecos-core-api_1     |[0m   `-._    `-._`-.__.-'_.-'    _.-'                                   
+[36;1msiwecos-core-api_1     |[0m  |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+[36;1msiwecos-core-api_1     |[0m  |    `-._`-._        _.-'_.-'    |                                  
+[36;1msiwecos-core-api_1     |[0m   `-._    `-._`-.__.-'_.-'    _.-'                                   
+[36;1msiwecos-core-api_1     |[0m       `-._    `-.__.-'    _.-'                                       
+[36;1msiwecos-core-api_1     |[0m           `-._        _.-'                                           
+[36;1msiwecos-core-api_1     |[0m               `-.__.-'                                               
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m 48:M 07 May 18:51:52.597 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[36;1msiwecos-core-api_1     |[0m 48:M 07 May 18:51:52.597 # Server started, Redis version 3.2.6
+[36;1msiwecos-core-api_1     |[0m 48:M 07 May 18:51:52.597 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36;1msiwecos-core-api_1     |[0m 48:M 07 May 18:51:52.597 * The server is now ready to accept connections on port 6379
+[36;1msiwecos-core-api_1     |[0m 
+[34mhshs-domxss-scanner_1  |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.21.0.7. Set the 'ServerName' directive globally to suppress this message
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:51:52,871 DEBG 'laravel-server_00' stderr output:
+[34mhshs-domxss-scanner_1  |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.21.0.7. Set the 'ServerName' directive globally to suppress this message
+[34mhshs-domxss-scanner_1  |[0m 
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:51:52,876 INFO success: laravel-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:51:52,876 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:51:52,876 INFO success: laravel-worker_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:51:52,897 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:51:52,900 INFO success: laravel-worker_05 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:52.990 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:53.164 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:53.266 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:53.281 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:53.283 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 5114 ms
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:53.377 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:53.454 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:53.543 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:53.552 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:53.535 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:53.554 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.40
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:53.557 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 5357 ms
+[34mhshs-domxss-scanner_1  |[0m [Tue May 07 18:51:53.574533 2019] [mpm_prefork:notice] [pid 31] AH00163: Apache/2.4.25 (Debian) PHP/7.2.18 configured -- resuming normal operations
+[34mhshs-domxss-scanner_1  |[0m [Tue May 07 18:51:53.574699 2019] [core:notice] [pid 31] AH00094: Command line: 'apache2 -D FOREGROUND'
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:51:53,592 DEBG 'laravel-server_00' stderr output:
+[34mhshs-domxss-scanner_1  |[0m [Tue May 07 18:51:53.574533 2019] [mpm_prefork:notice] [pid 31] AH00163: Apache/2.4.25 (Debian) PHP/7.2.18 configured -- resuming normal operations
+[34mhshs-domxss-scanner_1  |[0m [Tue May 07 18:51:53.574699 2019] [core:notice] [pid 31] AH00094: Command line: 'apache2 -D FOREGROUND'
+[34mhshs-domxss-scanner_1  |[0m 
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:51:53,603 INFO success: laravel-scheduler entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:51:53,604 INFO success: laravel-worker_03 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:51:53,606 INFO success: laravel-worker_07 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:51:53,606 INFO success: laravel-worker_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:51:53,607 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:51:53,608 INFO success: laravel-worker_06 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:51:53,608 INFO success: laravel-worker_04 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:51:53,609 INFO success: laravel-worker_02 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:51:53,615 INFO success: laravel-worker_05 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:51:53,616 INFO success: redis-server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:51:53,616 INFO success: laravel-server_00 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[36;1msiwecos-core-api_1     |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.21.0.9. Set the 'ServerName' directive globally to suppress this message
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:51:53,759 DEBG 'laravel-server_00' stderr output:
+[36;1msiwecos-core-api_1     |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.21.0.9. Set the 'ServerName' directive globally to suppress this message
+[36;1msiwecos-core-api_1     |[0m 
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:53.771 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:53.782 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.40
+[33mws-port-scanner_1      |[0m 07-May-2019 18:51:53.814 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/tomcat/webapps/ROOT.war]
+[36;1msiwecos-core-api_1     |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.21.0.9. Set the 'ServerName' directive globally to suppress this message
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:51:54,111 DEBG 'laravel-server_00' stderr output:
+[36;1msiwecos-core-api_1     |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.21.0.9. Set the 'ServerName' directive globally to suppress this message
+[36;1msiwecos-core-api_1     |[0m 
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:51:54.115 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/tomcat/webapps/ROOT.war]
+[36;1msiwecos-core-api_1     |[0m [Tue May 07 18:51:54.161303 2019] [mpm_prefork:notice] [pid 49] AH00163: Apache/2.4.25 (Debian) PHP/7.2.18 configured -- resuming normal operations
+[36;1msiwecos-core-api_1     |[0m [Tue May 07 18:51:54.161491 2019] [core:notice] [pid 49] AH00094: Command line: 'apache2 -D FOREGROUND'
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:51:54,170 DEBG 'laravel-server_00' stderr output:
+[36;1msiwecos-core-api_1     |[0m [Tue May 07 18:51:54.161303 2019] [mpm_prefork:notice] [pid 49] AH00163: Apache/2.4.25 (Debian) PHP/7.2.18 configured -- resuming normal operations
+[36;1msiwecos-core-api_1     |[0m [Tue May 07 18:51:54.161491 2019] [core:notice] [pid 49] AH00094: Command line: 'apache2 -D FOREGROUND'
+[36;1msiwecos-core-api_1     |[0m 
+[33mws-port-scanner_1      |[0m 07-May-2019 18:52:00.305 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[33mws-port-scanner_1      |[0m ################### WS-Port ###################
+[33mws-port-scanner_1      |[0m Properties are defined in a file called config.txt in the tomcat bin folder, or can be set as enviroment Variables
+[33mws-port-scanner_1      |[0m 18:52:02 [localhost-startStop-1] INFO : PoolManager - Starting thread pool
+[33mws-port-scanner_1      |[0m portscanner.parallelScanJobs=10
+[33mws-port-scanner_1      |[0m portscanner.debugMode=false
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:52:03.820 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[33mws-port-scanner_1      |[0m 07-May-2019 18:52:04.816 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/tomcat/webapps/ROOT.war] has finished in [11,001] ms
+[33mws-port-scanner_1      |[0m 07-May-2019 18:52:04.829 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/tomcat/webapps/docs]
+[33mws-port-scanner_1      |[0m 07-May-2019 18:52:04.887 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/tomcat/webapps/docs] has finished in [58] ms
+[33mws-port-scanner_1      |[0m 07-May-2019 18:52:04.888 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/tomcat/webapps/host-manager]
+[33mws-port-scanner_1      |[0m 07-May-2019 18:52:04.977 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/tomcat/webapps/host-manager] has finished in [89] ms
+[33mws-port-scanner_1      |[0m 07-May-2019 18:52:04.978 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/tomcat/webapps/examples]
+[36mws-tls-scanner_1       |[0m ################### WS-TLS ###################
+[36mws-tls-scanner_1       |[0m Properties are defined in a file called config.txt in the tomcat bin folder, or can be set as enviroment Variables
+[33mws-port-scanner_1      |[0m 07-May-2019 18:52:05.540 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/tomcat/webapps/examples] has finished in [562] ms
+[33mws-port-scanner_1      |[0m 07-May-2019 18:52:05.541 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/tomcat/webapps/manager]
+[33mws-port-scanner_1      |[0m 07-May-2019 18:52:05.590 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/tomcat/webapps/manager] has finished in [49] ms
+[33mws-port-scanner_1      |[0m 07-May-2019 18:52:05.637 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+[33mws-port-scanner_1      |[0m 07-May-2019 18:52:05.720 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+[33mws-port-scanner_1      |[0m 07-May-2019 18:52:05.738 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 12490 ms
+[36mws-tls-scanner_1       |[0m 18:52:06 [localhost-startStop-1] INFO : PoolManager - Adding BC as a Security Provider
+[36mws-tls-scanner_1       |[0m 18:52:06 [localhost-startStop-1] INFO : PoolManager - Starting thread pool
+[36mws-tls-scanner_1       |[0m tlsscanner.probeThreads=9
+[36mws-tls-scanner_1       |[0m tlsscanner.parallelProbeThreads=64
+[36mws-tls-scanner_1       |[0m tlsscanner.parallelScanJobs=10
+[36mws-tls-scanner_1       |[0m tlsscanner.debugMode=false
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:52:07.212 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/tomcat/webapps/ROOT.war] has finished in [13,096] ms
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:52:07.214 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/tomcat/webapps/docs]
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:52:07.226 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/tomcat/webapps/docs] has finished in [12] ms
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:52:07.227 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/tomcat/webapps/host-manager]
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:52:07.255 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/tomcat/webapps/host-manager] has finished in [27] ms
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:52:07.256 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/tomcat/webapps/examples]
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:52:07.487 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/tomcat/webapps/examples] has finished in [231] ms
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:52:07.488 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/tomcat/webapps/manager]
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:52:07.520 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/tomcat/webapps/manager] has finished in [32] ms
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:52:07.535 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:52:07.560 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+[36mws-tls-scanner_1       |[0m 07-May-2019 18:52:07.567 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 14044 ms
+[34mhshs-domxss-scanner_1  |[0m No scheduled commands are ready to run.
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:52:51,523 DEBG 'laravel-scheduler' stdout output:
+[34mhshs-domxss-scanner_1  |[0m No scheduled commands are ready to run.
+[34mhshs-domxss-scanner_1  |[0m 
+[36;1msiwecos-core-api_1     |[0m No scheduled commands are ready to run.
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:52:51,934 DEBG 'laravel-scheduler' stdout output:
+[36;1msiwecos-core-api_1     |[0m No scheduled commands are ready to run.
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m 172.21.0.1 - - [07/May/2019:18:53:05 +0000] "POST /api/v2/scan HTTP/1.1" 200 257 "-" "curl/7.54.0"
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:05,758 DEBG 'laravel-server_00' stdout output:
+[36;1msiwecos-core-api_1     |[0m 172.21.0.1 - - [07/May/2019:18:53:05 +0000] "POST /api/v2/scan HTTP/1.1" 200 257 "-" "curl/7.54.0"
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06][DpdI8kBRUAaShVA6COUJefbNhdtHkqZ8] Processing: App\Jobs\StartScannerJob
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:06,274 DEBG 'laravel-worker_03' stdout output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06][DpdI8kBRUAaShVA6COUJefbNhdtHkqZ8] Processing: App\Jobs\StartScannerJob
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06][gJumkPbhiLzewg6ku4u3ZRbGSoQA6rXJ] Processing: App\Jobs\StartScannerJob
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:06,280 DEBG 'laravel-worker_00' stdout output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06][gJumkPbhiLzewg6ku4u3ZRbGSoQA6rXJ] Processing: App\Jobs\StartScannerJob
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06][Uuc5HWH4ubLkTZPACiJZhYMjDQG2rGKD] Processing: App\Jobs\StartScannerJob
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:06,293 DEBG 'laravel-worker_07' stdout output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06][Uuc5HWH4ubLkTZPACiJZhYMjDQG2rGKD] Processing: App\Jobs\StartScannerJob
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.DEBUG: Preparing ScanResult
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: DOMXSS
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://hshs-domxss-scanner:80/api/v1/domxss  
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:06,340 DEBG 'laravel-worker_03' stderr output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.DEBUG: Preparing ScanResult
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: DOMXSS
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://hshs-domxss-scanner:80/api/v1/domxss  
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.DEBUG: Preparing ScanResult
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: INFOLEAK
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://infoleak-scanner:80  
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:06,341 DEBG 'laravel-worker_00' stderr output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.DEBUG: Preparing ScanResult
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: INFOLEAK
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://infoleak-scanner:80  
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.DEBUG: Preparing ScanResult
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: HEADER
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://hshs-domxss-scanner:80/api/v1/header  
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:06,349 DEBG 'laravel-worker_07' stderr output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.DEBUG: Preparing ScanResult
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: HEADER
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://hshs-domxss-scanner:80/api/v1/header  
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.DEBUG: Sending scan start request
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: DOMXSS
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://hshs-domxss-scanner:80/api/v1/domxss  
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:06,351 DEBG 'laravel-worker_03' stderr output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.DEBUG: Sending scan start request
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: DOMXSS
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://hshs-domxss-scanner:80/api/v1/domxss  
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.DEBUG: Sending scan start request
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: HEADER
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://hshs-domxss-scanner:80/api/v1/header  
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:06,359 DEBG 'laravel-worker_07' stderr output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.DEBUG: Sending scan start request
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: HEADER
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://hshs-domxss-scanner:80/api/v1/header  
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.DEBUG: Sending scan start request
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: INFOLEAK
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://infoleak-scanner:80  
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:06,365 DEBG 'laravel-worker_00' stderr output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.DEBUG: Sending scan start request
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: INFOLEAK
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://infoleak-scanner:80  
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06][Ak2W9zSjRlZNOPmxpfGMhB9J72PZ8yLO] Processing: App\Jobs\StartScannerJob
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:06,475 DEBG 'laravel-worker_06' stdout output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06][Ak2W9zSjRlZNOPmxpfGMhB9J72PZ8yLO] Processing: App\Jobs\StartScannerJob
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06][4wpQgajZ2oyB3mxef2UXhq4lYRtnaWWH] Processing: App\Jobs\StartScannerJob
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:06,490 DEBG 'laravel-worker_01' stdout output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06][4wpQgajZ2oyB3mxef2UXhq4lYRtnaWWH] Processing: App\Jobs\StartScannerJob
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06][fxXQNdQXyfUbExayA5OFRy4ynrkMcBVO] Processing: App\Jobs\StartScannerJob
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:06,513 DEBG 'laravel-worker_02' stdout output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06][fxXQNdQXyfUbExayA5OFRy4ynrkMcBVO] Processing: App\Jobs\StartScannerJob
+[36;1msiwecos-core-api_1     |[0m 
+[34mhshs-domxss-scanner_1  |[0m 172.21.0.9 - - [07/May/2019:18:53:06 +0000] "POST /api/v1/domxss HTTP/1.1" 200 209 "-" ""
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:53:06,526 DEBG 'laravel-server_00' stdout output:
+[34mhshs-domxss-scanner_1  |[0m 172.21.0.9 - - [07/May/2019:18:53:06 +0000] "POST /api/v1/domxss HTTP/1.1" 200 209 "-" ""
+[34mhshs-domxss-scanner_1  |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.INFO: Scan successful started
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: DOMXSS
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://hshs-domxss-scanner:80/api/v1/domxss  
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:06,543 DEBG 'laravel-worker_03' stderr output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.INFO: Scan successful started
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: DOMXSS
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://hshs-domxss-scanner:80/api/v1/domxss  
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06][DpdI8kBRUAaShVA6COUJefbNhdtHkqZ8] Processed:  App\Jobs\StartScannerJob
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:06,553 DEBG 'laravel-worker_03' stdout output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06][DpdI8kBRUAaShVA6COUJefbNhdtHkqZ8] Processed:  App\Jobs\StartScannerJob
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.DEBUG: Preparing ScanResult
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: TLS
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://ws-tls-scanner:8080/start  
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:06,590 DEBG 'laravel-worker_01' stderr output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.DEBUG: Preparing ScanResult
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: TLS
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://ws-tls-scanner:8080/start  
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.DEBUG: Sending scan start request
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: TLS
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://ws-tls-scanner:8080/start  
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:06,594 DEBG 'laravel-worker_01' stderr output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.DEBUG: Sending scan start request
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: TLS
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://ws-tls-scanner:8080/start  
+[36;1msiwecos-core-api_1     |[0m 
+[34mhshs-domxss-scanner_1  |[0m 172.21.0.9 - - [07/May/2019:18:53:06 +0000] "POST /api/v1/header HTTP/1.1" 200 209 "-" ""
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:53:06,605 DEBG 'laravel-server_00' stdout output:
+[34mhshs-domxss-scanner_1  |[0m 172.21.0.9 - - [07/May/2019:18:53:06 +0000] "POST /api/v1/header HTTP/1.1" 200 209 "-" ""
+[34mhshs-domxss-scanner_1  |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.INFO: Scan successful started
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: HEADER
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://hshs-domxss-scanner:80/api/v1/header  
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:06,608 DEBG 'laravel-worker_07' stderr output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.INFO: Scan successful started
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: HEADER
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://hshs-domxss-scanner:80/api/v1/header  
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06][Uuc5HWH4ubLkTZPACiJZhYMjDQG2rGKD] Processed:  App\Jobs\StartScannerJob
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:06,623 DEBG 'laravel-worker_07' stdout output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06][Uuc5HWH4ubLkTZPACiJZhYMjDQG2rGKD] Processed:  App\Jobs\StartScannerJob
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.DEBUG: Preparing ScanResult
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: PORT
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://ws-port-scanner:8080/start  
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:06,624 DEBG 'laravel-worker_06' stderr output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.DEBUG: Preparing ScanResult
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: PORT
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://ws-port-scanner:8080/start  
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.DEBUG: Sending scan start request
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: PORT
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://ws-port-scanner:8080/start  
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:06,639 DEBG 'laravel-worker_06' stderr output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.DEBUG: Sending scan start request
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: PORT
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://ws-port-scanner:8080/start  
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.DEBUG: Preparing ScanResult
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: VERSION
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://version-scanner:2015/api/v1/version  
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:06,652 DEBG 'laravel-worker_02' stderr output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.DEBUG: Preparing ScanResult
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: VERSION
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://version-scanner:2015/api/v1/version  
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.DEBUG: Sending scan start request
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: VERSION
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://version-scanner:2015/api/v1/version  
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:06,662 DEBG 'laravel-worker_02' stderr output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.DEBUG: Sending scan start request
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: VERSION
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://version-scanner:2015/api/v1/version  
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.INFO: Scan successful started
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: VERSION
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://version-scanner:2015/api/v1/version  
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:06,961 DEBG 'laravel-worker_02' stderr output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06] production.INFO: Scan successful started
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: VERSION
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://version-scanner:2015/api/v1/version  
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06][fxXQNdQXyfUbExayA5OFRy4ynrkMcBVO] Processed:  App\Jobs\StartScannerJob
+[33;1mversion-scanner_1      |[0m 172.21.0.9 - - [07/May/2019:18:53:06 +0000] "POST /api/v1/version HTTP/1.1" 200 2
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:06,965 DEBG 'laravel-worker_02' stdout output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:06][fxXQNdQXyfUbExayA5OFRy4ynrkMcBVO] Processed:  App\Jobs\StartScannerJob
+[36;1msiwecos-core-api_1     |[0m 
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:07][ic11sqckaJenpyuPDwddcxd2gFCtLDTK] Processing: App\Jobs\VersionScanJob
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:07] production.INFO: Starting Scan Job for https://www.mannesmann.ag  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:07] production.INFO: Queue jobs remaining 1  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:07] production.INFO: === Starting Scan Job for : https://www.mannesmann.ag/ ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:07] production.INFO: === Scanning for CMS: Drupal ===  
+[34mhshs-domxss-scanner_1  |[0m [2019-05-07 18:53:08][dpjBrR8M9HEi5KJ7di0A8uW8B4a5o8NR] Processing: App\Jobs\DomxssScanJob
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:53:08,818 DEBG 'laravel-worker_07' stdout output:
+[34mhshs-domxss-scanner_1  |[0m [2019-05-07 18:53:08][dpjBrR8M9HEi5KJ7di0A8uW8B4a5o8NR] Processing: App\Jobs\DomxssScanJob
+[34mhshs-domxss-scanner_1  |[0m 
+[34mhshs-domxss-scanner_1  |[0m [2019-05-07 18:53:08] production.INFO: Scanning the following URL: https://www.mannesmann.ag  
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:53:08,818 DEBG 'laravel-worker_07' stderr output:
+[34mhshs-domxss-scanner_1  |[0m [2019-05-07 18:53:08] production.INFO: Scanning the following URL: https://www.mannesmann.ag  
+[34mhshs-domxss-scanner_1  |[0m 
+[36;1msiwecos-core-api_1     |[0m 172.21.0.5 - - [07/May/2019:18:53:08 +0000] "GET /api/v2/callback/188 HTTP/1.0" 405 26426 "-" "-"
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:08,834 DEBG 'laravel-server_00' stdout output:
+[36;1msiwecos-core-api_1     |[0m 172.21.0.5 - - [07/May/2019:18:53:08 +0000] "GET /api/v2/callback/188 HTTP/1.0" 405 26426 "-" "-"
+[36;1msiwecos-core-api_1     |[0m 
+[33mws-port-scanner_1      |[0m 18:53:08 [http-nio-8080-exec-1] INFO : ScannerWS - Received a request to scan: https://www.mannesmann.ag
+[33mws-port-scanner_1      |[0m 18:53:08 [pool-2-thread-1] INFO : PortScannerCallback - Scanning: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m 172.21.0.5 - - [07/May/2019:18:53:08 +0000] "POST /api/v2/callback/188 HTTP/1.1" 200 282 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36"
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:09,016 DEBG 'laravel-server_00' stdout output:
+[36;1msiwecos-core-api_1     |[0m 172.21.0.5 - - [07/May/2019:18:53:08 +0000] "POST /api/v2/callback/188 HTTP/1.1" 200 282 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36"
+[36;1msiwecos-core-api_1     |[0m 
+[35minfoleak-scanner_1     |[0m 172.21.0.9 - - [07/May/2019:18:53:06 +0000] "POST / HTTP/1.1" 200 173 "-" ""
+[34mhshs-domxss-scanner_1  |[0m [2019-05-07 18:53:09][GwtJjdbtJSBsJLP1ZANsMGwvBQF8o667] Processing: App\Jobs\HeaderScanJob
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:53:09,028 DEBG 'laravel-worker_01' stdout output:
+[34mhshs-domxss-scanner_1  |[0m [2019-05-07 18:53:09][GwtJjdbtJSBsJLP1ZANsMGwvBQF8o667] Processing: App\Jobs\HeaderScanJob
+[34mhshs-domxss-scanner_1  |[0m 
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:53:09,035 DEBG 'laravel-worker_01' stderr output:
+[34mhshs-domxss-scanner_1  |[0m [2019-05-07 18:53:09] production.INFO: Scanning the following URL: https://www.mannesmann.ag  
+[34mhshs-domxss-scanner_1  |[0m 
+[34mhshs-domxss-scanner_1  |[0m [2019-05-07 18:53:09] production.INFO: Scanning the following URL: https://www.mannesmann.ag  
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:09][gJumkPbhiLzewg6ku4u3ZRbGSoQA6rXJ] Processed:  App\Jobs\StartScannerJob
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:09,074 DEBG 'laravel-worker_00' stdout output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:09][gJumkPbhiLzewg6ku4u3ZRbGSoQA6rXJ] Processed:  App\Jobs\StartScannerJob
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:09] production.INFO: Scan successful started
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: INFOLEAK
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://infoleak-scanner:80  
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:09,075 DEBG 'laravel-worker_00' stderr output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:09] production.INFO: Scan successful started
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: INFOLEAK
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://infoleak-scanner:80  
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:09] production.INFO: Scan successful started
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: PORT
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://ws-port-scanner:8080/start  
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:09,176 DEBG 'laravel-worker_06' stderr output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:09] production.INFO: Scan successful started
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: PORT
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://ws-port-scanner:8080/start  
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:09][Ak2W9zSjRlZNOPmxpfGMhB9J72PZ8yLO] Processed:  App\Jobs\StartScannerJob
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:09,179 DEBG 'laravel-worker_06' stdout output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:09][Ak2W9zSjRlZNOPmxpfGMhB9J72PZ8yLO] Processed:  App\Jobs\StartScannerJob
+[36;1msiwecos-core-api_1     |[0m 
+[36mws-tls-scanner_1       |[0m 18:53:09 [Webservice-Thread] INFO : ScannerWS - Received a request to scan: https://www.mannesmann.ag
+[36mws-tls-scanner_1       |[0m 18:53:09 [Worker-1-https://www.mannesmann.ag] INFO : TlsScannerCallback - Scanning: https://www.mannesmann.ag - 1097918613
+[36mws-tls-scanner_1       |[0m 18:53:09 [Worker-1-https://www.mannesmann.ag] INFO : TlsScannerCallback - 	CallbackUrls: http://siwecos-core-api/api/v2/callback/190
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:09] production.INFO: === File not found: https://www.mannesmann.ag/CHANGELOG.txt ===  
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:09] production.INFO: Scan successful started
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: TLS
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://ws-tls-scanner:8080/start  
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:09,420 DEBG 'laravel-worker_01' stderr output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:09] production.INFO: Scan successful started
+[36;1msiwecos-core-api_1     |[0m Scan ID: 32
+[36;1msiwecos-core-api_1     |[0m Scan URL: https://www.mannesmann.ag
+[36;1msiwecos-core-api_1     |[0m Scanner: TLS
+[36;1msiwecos-core-api_1     |[0m Scanner-URL: http://ws-tls-scanner:8080/start  
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:09][4wpQgajZ2oyB3mxef2UXhq4lYRtnaWWH] Processed:  App\Jobs\StartScannerJob
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:09,423 DEBG 'laravel-worker_01' stdout output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:09][4wpQgajZ2oyB3mxef2UXhq4lYRtnaWWH] Processed:  App\Jobs\StartScannerJob
+[36;1msiwecos-core-api_1     |[0m 
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:10] production.INFO: === File not found: https://www.mannesmann.ag/LICENSE.txt ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:10] production.INFO: === File found: https://www.mannesmann.ag/robots.txt ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:10] production.INFO: === File not found: https://www.mannesmann.ag/INSTALL.txt ===  
+[34mhshs-domxss-scanner_1  |[0m [2019-05-07 18:53:10][dpjBrR8M9HEi5KJ7di0A8uW8B4a5o8NR] Processed:  App\Jobs\DomxssScanJob2019-05-07 18:53:10,924 DEBG 'laravel-worker_07' stdout output:
+[34mhshs-domxss-scanner_1  |[0m [2019-05-07 18:53:10][dpjBrR8M9HEi5KJ7di0A8uW8B4a5o8NR] Processed:  App\Jobs\DomxssScanJob
+[34mhshs-domxss-scanner_1  |[0m 
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:53:10,925 DEBG 'laravel-worker_07' stdout output:
+[34mhshs-domxss-scanner_1  |[0m 
+[34mhshs-domxss-scanner_1  |[0m 
+[36;1msiwecos-core-api_1     |[0m 172.21.0.7 - - [07/May/2019:18:53:10 +0000] "POST /api/v2/callback/187 HTTP/1.1" 200 257 "-" "GuzzleHttp/6.3.3 curl/7.52.1 PHP/7.2.18"
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:10,926 DEBG 'laravel-server_00' stdout output:
+[36;1msiwecos-core-api_1     |[0m 172.21.0.7 - - [07/May/2019:18:53:10 +0000] "POST /api/v2/callback/187 HTTP/1.1" 200 257 "-" "GuzzleHttp/6.3.3 curl/7.52.1 PHP/7.2.18"
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m 172.21.0.7 - - [07/May/2019:18:53:10 +0000] "POST /api/v2/callback/189 HTTP/1.1" 200 257 "-" "GuzzleHttp/6.3.3 curl/7.52.1 PHP/7.2.18"
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:11,085 DEBG 'laravel-server_00' stdout output:
+[36;1msiwecos-core-api_1     |[0m 172.21.0.7 - - [07/May/2019:18:53:10 +0000] "POST /api/v2/callback/189 HTTP/1.1" 200 257 "-" "GuzzleHttp/6.3.3 curl/7.52.1 PHP/7.2.18"
+[36;1msiwecos-core-api_1     |[0m 
+[34mhshs-domxss-scanner_1  |[0m [2019-05-07 18:53:11][GwtJjdbtJSBsJLP1ZANsMGwvBQF8o667] Processed:  App\Jobs\HeaderScanJob2019-05-07 18:53:11,086 DEBG 'laravel-worker_01' stdout output:
+[34mhshs-domxss-scanner_1  |[0m [2019-05-07 18:53:11][GwtJjdbtJSBsJLP1ZANsMGwvBQF8o667] Processed:  App\Jobs\HeaderScanJob
+[34mhshs-domxss-scanner_1  |[0m 
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:53:11,089 DEBG 'laravel-worker_01' stdout output:
+[34mhshs-domxss-scanner_1  |[0m 
+[34mhshs-domxss-scanner_1  |[0m 
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:11] production.INFO: === File not found: https://www.mannesmann.ag/modules/README.txt ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:11] production.INFO: === File not found: https://www.mannesmann.ag/themes/README.txt ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:12] production.INFO: === File not found: https://www.mannesmann.ag/MAINTAINERS.txt ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:13] production.INFO: === File not found: https://www.mannesmann.ag/README.txt ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:13] production.INFO: === File not found: https://www.mannesmann.ag/core/MAINTAINERS.txt ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:14] production.INFO: === File not found: https://www.mannesmann.ag/misc/drupal.js ===  
+[36mws-tls-scanner_1       |[0m 18:53:14 [1097918613-1] WARN : TlsProbe - SNI Test could not get a ServerHello message from the Server!
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:15] production.INFO: === File not found: https://www.mannesmann.ag/scripts/code-clean.sh ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:15] production.INFO: === File not found: https://www.mannesmann.ag/scripts/cron-lynx.sh ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:16] production.INFO: === File not found: https://www.mannesmann.ag/misc/print.css ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:16] production.INFO: === File not found: https://www.mannesmann.ag/misc/druplicon.png ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:17] production.INFO: === File not found: https://www.mannesmann.ag/misc/autocomplete.js ===  
+[33mws-port-scanner_1      |[0m Starting Nmap 7.70 ( https://nmap.org ) at 2019-05-07 18:53 UTC
+[33mws-port-scanner_1      |[0m Nmap scan report for titan674.tn-rechenzentrum1.de (85.25.116.202)
+[33mws-port-scanner_1      |[0m Host is up (0.039s latency).
+[33mws-port-scanner_1      |[0m Not shown: 976 filtered ports, 14 closed ports
+[33mws-port-scanner_1      |[0m Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+[33mws-port-scanner_1      |[0m PORT    STATE SERVICE
+[33mws-port-scanner_1      |[0m 21/tcp  open  ftp
+[33mws-port-scanner_1      |[0m 22/tcp  open  ssh
+[33mws-port-scanner_1      |[0m 53/tcp  open  domain
+[33mws-port-scanner_1      |[0m 80/tcp  open  http
+[33mws-port-scanner_1      |[0m 106/tcp open  pop3pw
+[33mws-port-scanner_1      |[0m 110/tcp open  pop3
+[33mws-port-scanner_1      |[0m 143/tcp open  imap
+[33mws-port-scanner_1      |[0m 443/tcp open  https
+[33mws-port-scanner_1      |[0m 993/tcp open  imaps
+[33mws-port-scanner_1      |[0m 995/tcp open  pop3s
+[33mws-port-scanner_1      |[0m 
+[33mws-port-scanner_1      |[0m Nmap done: 1 IP address (1 host up) scanned in 8.92 seconds
+[33mws-port-scanner_1      |[0m 18:53:18 [pool-2-thread-1] INFO : PortScannerCallback - Finished scanning: https://www.mannesmann.ag
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:18] production.INFO: === File not found: https://www.mannesmann.ag/misc/menu-leaf.png ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:18] production.INFO: === File not found: https://www.mannesmann.ag/UPGRADE.txt ===  
+[33mws-port-scanner_1      |[0m 18:53:18 [pool-2-thread-1] INFO : PortScannerCallback - Calling back: http://siwecos-core-api/api/v2/callback/191 for PORT
+[36;1msiwecos-core-api_1     |[0m 172.21.0.2 - - [07/May/2019:18:53:19 +0000] "POST /api/v2/callback/191 HTTP/1.1" 200 313 "-" "Java/1.8.0_201"
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:19,265 DEBG 'laravel-server_00' stdout output:
+[36;1msiwecos-core-api_1     |[0m 172.21.0.2 - - [07/May/2019:18:53:19 +0000] "POST /api/v2/callback/191 HTTP/1.1" 200 313 "-" "Java/1.8.0_201"
+[36;1msiwecos-core-api_1     |[0m 
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:19] production.INFO: === File not found: https://www.mannesmann.ag/misc/menu-collapsed.png ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:20] production.INFO: === File not found: https://www.mannesmann.ag/misc/arrow-desc.png ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:20] production.INFO: === File not found: https://www.mannesmann.ag/misc/arrow-asc.png ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:20] production.INFO: === Scanning for CMS: Wordpress ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:20] production.INFO: === File not found: https://www.mannesmann.ag/readme.html ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:20] production.INFO: === File not found: https://www.mannesmann.ag/license.txt ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:20] production.INFO: === File not found: https://www.mannesmann.ag/wp-content/plugins/akismet/readme.txt ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:20] production.INFO: === File found: https://www.mannesmann.ag/wp-includes/js/tinymce/tiny_mce_popup.js ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:20] production.INFO: === File found: https://www.mannesmann.ag/wp-includes/js/quicktags.js ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:20] production.INFO: === File found: https://www.mannesmann.ag/wp-includes/js/tinymce/utils/form_utils.js ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:20] production.INFO: === File found: https://www.mannesmann.ag/wp-includes/js/tinymce/utils/mctabs.js ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:21] production.INFO: === File found: https://www.mannesmann.ag/wp-includes/js/tinymce/utils/validate.js ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:21] production.INFO: === File found: https://www.mannesmann.ag/wp-admin/js/editor.js ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:21] production.INFO: === File found: https://www.mannesmann.ag/wp-admin/js/common.js ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:21] production.INFO: === File found: https://www.mannesmann.ag/wp-includes/js/autosave.js ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:21] production.INFO: === File found: https://www.mannesmann.ag/wp-admin/js/edit-comments.js ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:21] production.INFO: === File found: https://www.mannesmann.ag/wp-admin/css/install.css ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:21] production.INFO: === File found: https://www.mannesmann.ag/wp-admin/js/post.js ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:21] production.INFO: === File found: https://www.mannesmann.ag/wp-admin/css/media.css ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:21] production.INFO: === File found: https://www.mannesmann.ag/wp-includes/js/jquery/jquery.js ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:21] production.INFO: === File found: https://www.mannesmann.ag/wp-admin/css/ie.css ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:21] production.INFO: === File found: https://www.mannesmann.ag/wp-admin/css/media-rtl.css ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:21] production.INFO: === File found: https://www.mannesmann.ag/wp-includes/js/colorpicker.js ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:21] production.INFO: === File found: https://www.mannesmann.ag/wp-includes/images/smilies/icon_redface.gif ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:21] production.INFO: === Scanning for CMS: Typo3 ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:22] production.INFO: === File not found: https://www.mannesmann.ag/typo3/sysext/css_styled_content/static/setup.txt ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:22] production.INFO: === File not found: https://www.mannesmann.ag/typo3/sysext/indexed_search/ext_tables.sql ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:23] production.INFO: === File not found: https://www.mannesmann.ag/LICENSE.txt ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:24] production.INFO: === File not found: https://www.mannesmann.ag/typo3/sysext/indexed_search/ext_conf_template.txt ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:24] production.INFO: === File not found: https://www.mannesmann.ag/typo3/sysext/sys_note/ext_tables.sql ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:25] production.INFO: === File not found: https://www.mannesmann.ag/typo3/sysext/impexp/ext_tables.sql ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:26] production.INFO: === File not found: https://www.mannesmann.ag/typo3/sysext/sys_action/ext_tables.sql ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:26] production.INFO: === File not found: https://www.mannesmann.ag/typo3/sysext/extbase/ext_typoscript_setup.txt ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:28] production.INFO: === File not found: https://www.mannesmann.ag/typo3/sysext/scheduler/ext_tables.sql ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:29] production.INFO: === File not found: https://www.mannesmann.ag/typo3/sysext/felogin/ext_tables.sql ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:30] production.INFO: === File not found: https://www.mannesmann.ag/typo3/sysext/css_styled_content/static/constants.txt ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:30] production.INFO: === File not found: https://www.mannesmann.ag/typo3/sysext/scheduler/ext_conf_template.txt ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:31] production.INFO: === File not found: https://www.mannesmann.ag/typo3/sysext/extbase/ext_tables.sql ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:32] production.INFO: === File not found: https://www.mannesmann.ag/typo3/sysext/rsaauth/ext_conf_template.txt ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:32] production.INFO: === File not found: https://www.mannesmann.ag/typo3/sysext/rsaauth/ext_tables.sql ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:33] production.INFO: === File not found: https://www.mannesmann.ag/typo3/sysext/saltedpasswords/ext_conf_template.txt ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:33] production.INFO: === File not found: https://www.mannesmann.ag/typo3/sysext/rtehtmlarea/htmlarea/htmlarea.js ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:34] production.INFO: === File not found: https://www.mannesmann.ag/typo3/sysext/t3skin/extjs/xtheme-t3skin.css ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:35] production.INFO: === File not found: https://www.mannesmann.ag/typo3/sysext/rtehtmlarea/ext_conf_template.txt ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:35] production.INFO: === File not found: https://www.mannesmann.ag/typo3/sysext/felogin/ext_typoscript_setup.txt ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:35] production.INFO: === Scanning for CMS: Joomla ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:36] production.INFO: === File not found: https://www.mannesmann.ag/htaccess.txt ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:37] production.INFO: === File not found: https://www.mannesmann.ag/media/system/js/validate.js ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:37] production.INFO: === File not found: https://www.mannesmann.ag/images/powered_by.png ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:38] production.INFO: === File not found: https://www.mannesmann.ag/templates/system/css/offline.css ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:38] production.INFO: === File not found: https://www.mannesmann.ag/images/banners/osmbanner1.png ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:39] production.INFO: === File not found: https://www.mannesmann.ag/images/banners/osmbanner2.png ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:40] production.INFO: === File not found: https://www.mannesmann.ag/media/system/css/calendar-jos.css ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:40] production.INFO: === File not found: https://www.mannesmann.ag/templates/system/css/general.css ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:41] production.INFO: === File not found: https://www.mannesmann.ag/media/system/js/tabs.js ===  
+[36mws-tls-scanner_1       |[0m 18:53:41 [Worker-1-https://www.mannesmann.ag] INFO : TlsScannerCallback - Finished scanning: https://www.mannesmann.ag
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:42] production.INFO: === File not found: https://www.mannesmann.ag/templates/system/css/system.css ===  
+[36mws-tls-scanner_1       |[0m 18:53:42 [Worker-1-https://www.mannesmann.ag] INFO : TlsScannerCallback - Calling back: http://siwecos-core-api/api/v2/callback/190 for TLS
+[36;1msiwecos-core-api_1     |[0m 172.21.0.3 - - [07/May/2019:18:53:42 +0000] "POST /api/v2/callback/190 HTTP/1.1" 200 313 "-" "Java/1.8.0_201"
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:42,323 DEBG 'laravel-server_00' stdout output:
+[36;1msiwecos-core-api_1     |[0m 172.21.0.3 - - [07/May/2019:18:53:42 +0000] "POST /api/v2/callback/190 HTTP/1.1" 200 313 "-" "Java/1.8.0_201"
+[36;1msiwecos-core-api_1     |[0m 
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:42] production.INFO: === File not found: https://www.mannesmann.ag/templates/system/css/error.css ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:43] production.INFO: === File not found: https://www.mannesmann.ag/templates/system/css/toolbar.css ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:43] production.INFO: === File not found: https://www.mannesmann.ag/media/system/css/mootree.css ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:44] production.INFO: === File not found: https://www.mannesmann.ag/templates/system/css/offline_rtl.css ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:45] production.INFO: === File not found: https://www.mannesmann.ag/templates/system/css/editor.css ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:45] production.INFO: === File not found: https://www.mannesmann.ag/media/system/css/modal.css ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:46] production.INFO: === File not found: https://www.mannesmann.ag/media/system/js/caption.js ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:47] production.INFO: === File not found: https://www.mannesmann.ag/media/system/js/switcher.js ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:47] production.INFO: === File not found: https://www.mannesmann.ag/media/system/js/combobox.js ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: === File not found: https://www.mannesmann.ag/media/system/js/modal.js ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Returning Wordpress as CMS with 17 matches  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: === Detecting used Version ===  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Fetching readme.html  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: File https://www.mannesmann.ag/readme.html not found, next file...  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Fetching license.txt  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: File https://www.mannesmann.ag/license.txt not found, next file...  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Fetching wp-content/plugins/akismet/readme.txt  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: File https://www.mannesmann.ag/wp-content/plugins/akismet/readme.txt not found, next file...  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Fetching wp-includes/js/tinymce/tiny_mce_popup.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: File https://www.mannesmann.ag/wp-includes/js/tinymce/tiny_mce_popup.js with hash 38dbcc925529368812f5c2fbcb389616 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Fetching wp-includes/js/quicktags.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: File https://www.mannesmann.ag/wp-includes/js/quicktags.js with hash 3ea535778aa41165e0b6fdbe1fa7c4b4 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Fetching wp-includes/js/tinymce/utils/form_utils.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: File https://www.mannesmann.ag/wp-includes/js/tinymce/utils/form_utils.js with hash a32d1bbc44057b7dd0d2776ba2826b7c found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Fetching wp-includes/js/tinymce/utils/mctabs.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: File https://www.mannesmann.ag/wp-includes/js/tinymce/utils/mctabs.js with hash 9f78248e9e0a64aa17f3062ce25099cb found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Fetching wp-includes/js/tinymce/utils/validate.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: File https://www.mannesmann.ag/wp-includes/js/tinymce/utils/validate.js with hash 681466e5980a5b99d9baeded56c67d34 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Fetching wp-admin/js/editor.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: File https://www.mannesmann.ag/wp-admin/js/editor.js with hash a7a6f1bc16e1f5c9bdd1b08d95151d11 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Fetching wp-admin/js/common.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: File https://www.mannesmann.ag/wp-admin/js/common.js with hash 2830c37f0e53cd900bce37ec46e29ddc found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Fetching wp-includes/js/autosave.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: File https://www.mannesmann.ag/wp-includes/js/autosave.js with hash b14a525c6e9153ceaa71eb4561ac5991 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Fetching wp-admin/js/edit-comments.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: File https://www.mannesmann.ag/wp-admin/js/edit-comments.js with hash 5a9fd1c52b9007ab3d2afbaa6f2dcf64 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Fetching wp-admin/css/install.css  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: File https://www.mannesmann.ag/wp-admin/css/install.css with hash acea8fff302212325749ca45805add61 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Fetching wp-admin/js/post.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: File https://www.mannesmann.ag/wp-admin/js/post.js with hash d4beb52b277333b38bf53fa07309f192 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Fetching wp-admin/css/media.css  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: File https://www.mannesmann.ag/wp-admin/css/media.css with hash 246e5b303936e280ba11653683726659 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Fetching wp-includes/js/jquery/jquery.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: File https://www.mannesmann.ag/wp-includes/js/jquery/jquery.js with hash 25c76e632c1ee2f2d25292b72acc17d4 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:48] production.INFO: Fetching wp-admin/css/ie.css  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: File https://www.mannesmann.ag/wp-admin/css/ie.css with hash dfb747b363e0d019c519b7a8bada6efc found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Fetching wp-admin/css/media-rtl.css  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: File https://www.mannesmann.ag/wp-admin/css/media-rtl.css with hash 4987695c2fdde552b9723a7a23eb33a4 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Fetching wp-includes/js/colorpicker.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: File https://www.mannesmann.ag/wp-includes/js/colorpicker.js with hash f01017ca562067f4840eb2b6f99f2daf found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Fetching wp-includes/images/smilies/icon_redface.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: File https://www.mannesmann.ag/wp-includes/images/smilies/icon_redface.gif with hash ddeac27dd6f38bce798023a25a66010a found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Fetching wp-admin/js/widgets.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: File https://www.mannesmann.ag/wp-admin/js/widgets.js with hash e83fa02f4e7f2fad6a2908294ef48346 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Fetching wp-admin/css/ie-rtl.css  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: File https://www.mannesmann.ag/wp-admin/css/ie-rtl.css with hash fd7d0df7b16e00fd528ccf616e4124d3 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Fetching wp-includes/js/tinymce/license.txt  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: File https://www.mannesmann.ag/wp-includes/js/tinymce/license.txt not found, next file...  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Fetching wp-includes/images/smilies/icon_rolleyes.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: File https://www.mannesmann.ag/wp-includes/images/smilies/icon_rolleyes.gif with hash 89077d93d01d6f71dc21674b9f545d17 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Fetching wp-includes/images/smilies/icon_evil.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: File https://www.mannesmann.ag/wp-includes/images/smilies/icon_evil.gif with hash 2423931c62f57d3c2976801421abbb05 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Fetching wp-includes/images/smilies/icon_cry.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: File https://www.mannesmann.ag/wp-includes/images/smilies/icon_cry.gif with hash 5da5f07ede5730e210dafae8d97f1f62 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Fetching wp-admin/images/wordpress-logo.png  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: File https://www.mannesmann.ag/wp-admin/images/wordpress-logo.png with hash c6b0f979b9e66fc338f4cb3853a5608a found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Fetching wp-includes/images/smilies/icon_lol.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: File https://www.mannesmann.ag/wp-includes/images/smilies/icon_lol.gif with hash fe9ded95d13eaf65b383cfb6b7798108 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Fetching wp-includes/images/smilies/icon_sad.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: File https://www.mannesmann.ag/wp-includes/images/smilies/icon_sad.gif with hash 793fa2ae7c21bd7db0803c27cc1c07a3 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Fetching wp-includes/images/smilies/icon_cool.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: File https://www.mannesmann.ag/wp-includes/images/smilies/icon_cool.gif with hash 5841374462868c9a766738b5d5bce9fd found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Fetching wp-includes/images/smilies/icon_arrow.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: File https://www.mannesmann.ag/wp-includes/images/smilies/icon_arrow.gif with hash d9078df58bf1de76746241bd92ac2444 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Fetching wp-includes/images/smilies/icon_mad.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: File https://www.mannesmann.ag/wp-includes/images/smilies/icon_mad.gif with hash 2ad92f9ec41ddc8ee253c2409a027404 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Fetching wp-includes/images/smilies/icon_neutral.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: File https://www.mannesmann.ag/wp-includes/images/smilies/icon_neutral.gif with hash 7445588270b83d0154018a0f6158d779 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Fetching wp-includes/images/smilies/icon_twisted.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: File https://www.mannesmann.ag/wp-includes/images/smilies/icon_twisted.gif with hash 56d63d335faf2b9b705216f77fc84084 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Fetching wp-includes/images/smilies/icon_biggrin.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: File https://www.mannesmann.ag/wp-includes/images/smilies/icon_biggrin.gif with hash 0f9eafc5f35050bf3d79f38d88bf9d86 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Fetching wp-includes/images/smilies/icon_confused.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: File https://www.mannesmann.ag/wp-includes/images/smilies/icon_confused.gif with hash f4e73191a55161c8654310799bdc09bd found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:49] production.INFO: Fetching wp-includes/images/smilies/icon_idea.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: File https://www.mannesmann.ag/wp-includes/images/smilies/icon_idea.gif with hash 16c8ed37a3f6d76fdd9c080fe462f6a4 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Fetching wp-includes/images/smilies/icon_exclaim.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: File https://www.mannesmann.ag/wp-includes/images/smilies/icon_exclaim.gif with hash 3d11adad32e7bbc4d721156e3b003bd5 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Fetching wp-includes/images/smilies/icon_razz.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: File https://www.mannesmann.ag/wp-includes/images/smilies/icon_razz.gif with hash 8ae3a1eb1b636b65585da3e12b225008 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Fetching wp-includes/images/smilies/icon_wink.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: File https://www.mannesmann.ag/wp-includes/images/smilies/icon_wink.gif with hash 6b687a134711bb0c7dd9b4ba5223d5ca found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Fetching wp-includes/images/smilies/icon_eek.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: File https://www.mannesmann.ag/wp-includes/images/smilies/icon_eek.gif with hash 60666400eabb78b17a76039bdcd4dab0 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Fetching wp-includes/images/smilies/icon_surprised.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: File https://www.mannesmann.ag/wp-includes/images/smilies/icon_surprised.gif with hash db0d028bc820c41fff8fadcaee90d43d found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Fetching wp-includes/images/smilies/icon_mrgreen.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: File https://www.mannesmann.ag/wp-includes/images/smilies/icon_mrgreen.gif with hash a0c07b1e446da29dcb0ad9e19ff0bda4 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Fetching wp-includes/images/smilies/icon_question.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: File https://www.mannesmann.ag/wp-includes/images/smilies/icon_question.gif with hash d9c5f831b1159fb32757ec8735d67fe1 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Fetching wp-includes/images/smilies/icon_smile.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: File https://www.mannesmann.ag/wp-includes/images/smilies/icon_smile.gif with hash bffd535b79d68b9a2fa2ba56dbd2ea56 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Fetching wp-includes/js/tw-sack.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: File https://www.mannesmann.ag/wp-includes/js/tw-sack.js with hash b989a5bd84f6ebcbc1393ec003e6e991 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Fetching wp-admin/js/inline-edit-post.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: File https://www.mannesmann.ag/wp-admin/js/inline-edit-post.js with hash ed03381714c58f75507c8ce11afd8c50 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Fetching wp-includes/js/wp-lists.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: File https://www.mannesmann.ag/wp-includes/js/wp-lists.js with hash c54ced2e822b232f2ad8a5f34930386f found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Fetching wp-includes/js/thickbox/thickbox.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: File https://www.mannesmann.ag/wp-includes/js/thickbox/thickbox.js with hash 482a8efb7c72fbecfa29a509121ea263 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Fetching wp-admin/js/postbox.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: File https://www.mannesmann.ag/wp-admin/js/postbox.js with hash 87a08ca86f25ee997a627ce4a88ec359 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Fetching wp-admin/js/media-upload.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: File https://www.mannesmann.ag/wp-admin/js/media-upload.js with hash 5f66a88c118be462a566029db50aa3a2 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Fetching wp-admin/js/tags.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: File https://www.mannesmann.ag/wp-admin/js/tags.js with hash 4cc64266f1b35a86c63cc1b2c42f7306 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Fetching wp-includes/js/jquery/jquery.form.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: File https://www.mannesmann.ag/wp-includes/js/jquery/jquery.form.js with hash e5afd8e41d2ec22c19932b068cd90a71 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Fetching wp-includes/js/swfupload/handlers.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: File https://www.mannesmann.ag/wp-includes/js/swfupload/handlers.js with hash 14b2d04fdb85bc1f171cf3dfb2987dca found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Fetching wp-includes/js/tinymce/utils/editable_selects.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: File https://www.mannesmann.ag/wp-includes/js/tinymce/utils/editable_selects.js with hash 79087fabcb00132181650bd80666c085 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Fetching wp-admin/js/inline-edit-tax.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: File https://www.mannesmann.ag/wp-admin/js/inline-edit-tax.js with hash 169c038f805a493d8b5383670a02d89c found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Fetching wp-admin/js/user-profile.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: File https://www.mannesmann.ag/wp-admin/js/user-profile.js with hash 2b68876c91544e9d82a545409171468f found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:50] production.INFO: Fetching wp-admin/js/dashboard.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: File https://www.mannesmann.ag/wp-admin/js/dashboard.js with hash dcaf4f687c6c523cf0e2d5515234faa5 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Fetching wp-admin/js/plugin-install.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: File https://www.mannesmann.ag/wp-admin/js/plugin-install.js with hash 2e2deb24835a5f6c5259690d775a2324 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Fetching wp-includes/js/wp-ajax-response.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: File https://www.mannesmann.ag/wp-includes/js/wp-ajax-response.js with hash 316dc6a88af5010df7bee09c481950e8 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Fetching wp-includes/js/thickbox/thickbox.css  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: File https://www.mannesmann.ag/wp-includes/js/thickbox/thickbox.css with hash 87bddde1890612b32a9a4672e5d26661 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Fetching wp-admin/js/xfn.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: File https://www.mannesmann.ag/wp-admin/js/xfn.js with hash e2d6eecbd774af1e2bb1a16ec117286b found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Fetching wp-admin/js/link.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: File https://www.mannesmann.ag/wp-admin/js/link.js with hash 1c8675dcd035cfb374f67bfcbf117a8c found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Fetching wp-includes/js/crop/cropper.css  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: File https://www.mannesmann.ag/wp-includes/js/crop/cropper.css with hash 6b79350bf46e0f692a4d1b2807ed0399 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Fetching wp-includes/js/crop/marqueeVert.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: File https://www.mannesmann.ag/wp-includes/js/crop/marqueeVert.gif with hash ae9accf100a4b9930639adff52d4dcc7 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Fetching wp-includes/js/crop/marqueeHoriz.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: File https://www.mannesmann.ag/wp-includes/js/crop/marqueeHoriz.gif with hash 8cccae9c1ebafdb83be602e4d44c6f0a found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Fetching wp-includes/js/crop/cropper.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: File https://www.mannesmann.ag/wp-includes/js/crop/cropper.js with hash 1d97b296d918482e1273c56fbff6a8e2 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Fetching wp-admin/js/word-count.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: File https://www.mannesmann.ag/wp-admin/js/word-count.js with hash 66256995400e51a5f931a11bc11e1e4e found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Fetching wp-includes/js/jquery/suggest.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: File https://www.mannesmann.ag/wp-includes/js/jquery/suggest.js with hash bf55f3b46b05aa372a0bed97b848de9e found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Fetching wp-admin/js/comment.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: File https://www.mannesmann.ag/wp-admin/js/comment.js with hash a3fefb4998b3f534e144db4f235d0f03 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Fetching wp-admin/js/gallery.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: File https://www.mannesmann.ag/wp-admin/js/gallery.js with hash 1be9174b160c7eb40e6cdce4031ae89e found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Fetching wp-admin/js/password-strength-meter.js  
+[34mhshs-domxss-scanner_1  |[0m No scheduled commands are ready to run.
+[34mhshs-domxss-scanner_1  |[0m 2019-05-07 18:53:51,671 DEBG 'laravel-scheduler' stdout output:
+[34mhshs-domxss-scanner_1  |[0m No scheduled commands are ready to run.
+[34mhshs-domxss-scanner_1  |[0m 
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: File https://www.mannesmann.ag/wp-admin/js/password-strength-meter.js with hash 4d912846975670c9e2232a19ef7bb41b found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Fetching wp-includes/images/rss.png  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: File https://www.mannesmann.ag/wp-includes/images/rss.png with hash a5b05bbf28f294b02efd942a4e5ab806 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Fetching wp-includes/images/wlw/wp-watermark.png  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: File https://www.mannesmann.ag/wp-includes/images/wlw/wp-watermark.png with hash c173b88f257603b0ea51aec2c03bec4b found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Fetching wp-includes/wlwmanifest.xml  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: File https://www.mannesmann.ag/wp-includes/wlwmanifest.xml with hash dfd490b6f383ea02a269031ff05e8896 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Fetching wp-admin/js/media.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: File https://www.mannesmann.ag/wp-admin/js/media.js with hash fc6243e6ea74f2ca62bffb849de3657f found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Fetching wp-includes/js/swfupload/swfupload.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: File https://www.mannesmann.ag/wp-includes/js/swfupload/swfupload.js with hash ef3ae9014525cf81187afaa61bca737e found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Remaining versions after this file: 26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:51] production.INFO: Fetching wp-admin/js/nav-menu.js  
+[36;1msiwecos-core-api_1     |[0m No scheduled commands are ready to run.
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:51,995 DEBG 'laravel-scheduler' stdout output:
+[36;1msiwecos-core-api_1     |[0m No scheduled commands are ready to run.
+[36;1msiwecos-core-api_1     |[0m 
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: File https://www.mannesmann.ag/wp-admin/js/nav-menu.js with hash c80084b98b0ee2a45e17dd3eef229d8d found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Remaining versions after this file: 25  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Fetching wp-admin/js/customize-controls.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: File https://www.mannesmann.ag/wp-admin/js/customize-controls.js with hash 7a47f3f40fb6d9785cbd14e7b3c37e21 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Remaining versions after this file: 9  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Fetching wp-includes/images/wlw/wp-comments.png  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: File https://www.mannesmann.ag/wp-includes/images/wlw/wp-comments.png with hash 4cc2365d0450dedec30cec2e73a8a1d4 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Remaining versions after this file: 9  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Fetching wp-includes/images/wlw/wp-icon.png  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: File https://www.mannesmann.ag/wp-includes/images/wlw/wp-icon.png with hash 311d098eca9a89370877334b1b8f992a found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Remaining versions after this file: 9  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Fetching wp-includes/js/wplink.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: File https://www.mannesmann.ag/wp-includes/js/wplink.js with hash 26500607f021bfaa5b1462e48c0ee7e5 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Remaining versions after this file: 8  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Fetching wp-admin/images/date-button.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: File https://www.mannesmann.ag/wp-admin/images/date-button.gif with hash cd3b134e8fd47881f1841a857ebd97f0 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Remaining versions after this file: 8  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Fetching wp-admin/images/media-button-music.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: File https://www.mannesmann.ag/wp-admin/images/media-button-music.gif with hash 91c40146718f73144dde29494a6f9c3c found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Remaining versions after this file: 8  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Fetching wp-admin/images/media-button-video.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: File https://www.mannesmann.ag/wp-admin/images/media-button-video.gif with hash 91c6cc0f67412e41acf7bdc63d2c4ee0 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Remaining versions after this file: 8  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Fetching wp-admin/images/xit.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: File https://www.mannesmann.ag/wp-admin/images/xit.gif with hash c313ffcd0a1fe87b0a65dc2553e0ffdb found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Remaining versions after this file: 8  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Fetching wp-admin/images/media-button-other.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: File https://www.mannesmann.ag/wp-admin/images/media-button-other.gif with hash 1f8f339019a4dea621a161a23743fa28 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Remaining versions after this file: 8  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Fetching wp-admin/images/loading.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: File https://www.mannesmann.ag/wp-admin/images/loading.gif with hash fb72313c9cd2f6f42123ef9213837924 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Remaining versions after this file: 8  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Fetching wp-admin/images/media-button-image.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: File https://www.mannesmann.ag/wp-admin/images/media-button-image.gif with hash 62a84ad3d4d2921ecb1c0f86d8f0f790 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Remaining versions after this file: 8  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Fetching wp-admin/images/bubble_bg.gif  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: File https://www.mannesmann.ag/wp-admin/images/bubble_bg.gif with hash 49ce47d14ff136019b315b72fa1e28e9 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Remaining versions after this file: 8  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Fetching wp-includes/images/crystal/default.png  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: File https://www.mannesmann.ag/wp-includes/images/crystal/default.png with hash 41f23e292a2fbedc21ecae2d04f29bba found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Remaining versions after this file: 8  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Fetching wp-includes/images/crystal/text.png  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: File https://www.mannesmann.ag/wp-includes/images/crystal/text.png with hash 90cc20d1b2aafc23be64ff2511e35bb5 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Remaining versions after this file: 8  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Fetching wp-admin/js/image-edit.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: File https://www.mannesmann.ag/wp-admin/js/image-edit.js with hash f4da63e5c9c6e64e67d9662965af69d8 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Remaining versions after this file: 8  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Fetching wp-includes/images/crystal/archive.png  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: File https://www.mannesmann.ag/wp-includes/images/crystal/archive.png with hash fbaa067099eb73e2dcecb3f29033e0fa found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Remaining versions after this file: 8  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Fetching wp-includes/images/crystal/document.png  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: File https://www.mannesmann.ag/wp-includes/images/crystal/document.png with hash 5d9bd2b7c1a6de4cd60db260705a0d4a found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Remaining versions after this file: 8  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Fetching wp-includes/images/crystal/spreadsheet.png  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: File https://www.mannesmann.ag/wp-includes/images/crystal/spreadsheet.png with hash b0b5df1b422cc9300b05604a7a71b06c found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Remaining versions after this file: 8  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:52] production.INFO: Fetching wp-includes/js/tinymce/langs/wp-langs-en.js  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:53] production.INFO: File https://www.mannesmann.ag/wp-includes/js/tinymce/langs/wp-langs-en.js with hash c1dbeecd27447d90fc2a188c58586ad3 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:53] production.INFO: Remaining versions after this file: 8  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:53] production.INFO: Fetching wp-includes/images/crystal/interactive.png  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:53] production.INFO: File https://www.mannesmann.ag/wp-includes/images/crystal/interactive.png with hash 534872ce342d27be12c21a24a3c960ea found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:53] production.INFO: Remaining versions after this file: 8  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:53] production.INFO: Fetching wp-includes/images/crystal/audio.png  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:53] production.INFO: File https://www.mannesmann.ag/wp-includes/images/crystal/audio.png with hash 6b1b3153b950cb7d88b0790445892365 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:53] production.INFO: Remaining versions after this file: 8  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:53] production.INFO: Fetching wp-admin/images/menu.png  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:53] production.INFO: File https://www.mannesmann.ag/wp-admin/images/menu.png with hash 48b8c0d56811b724ea34d7f052a126b3 found  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:53] production.INFO: Remaining versions after this file: 8  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:53] production.INFO: Found a matching branch 4.0 for version 4.0.25  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:54] production.INFO: Found a matching branch 4.0 for version 4.0.24  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:54] production.INFO: Found a matching branch 4.0 for version 4.0.23  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:55] production.INFO: Found a matching branch 4.0 for version 4.0.22  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:55] production.INFO: Found a matching branch 4.0 for version 4.0.21  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:55] production.INFO: Found a matching branch 4.0 for version 4.0.20  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:56] production.INFO: Found a matching branch 4.0 for version 4.0.19  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:56] production.INFO: Found a matching branch 4.0 for version 4.0.26  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:56] production.INFO: Making callback for https://www.mannesmann.ag/ to http://siwecos-core-api/api/v2/callback/192 with content {"name":"CMSVERSION","version":"1.0.0","hasError":false,"errorMessage":null,"score":90,"tests":[{"name":"CMSVERSION","errorMessage":null,"hasError":false,"score":90,"scoreType":"warning","testDetails":[{"placeholder":"CMS_MIGHT_UPTODATE","values":{"cms":"Wordpress","version":"4.0.25, 4.0.24, 4.0.23, 4.0.22, 4.0.21, 4.0.20, 4.0.19, 4.0.26"}}]}]}  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:57] production.INFO: Finished callback for https://www.mannesmann.ag/  
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:57] production.INFO: === Finishing Scan Job for : https://www.mannesmann.ag/ ===  
+[36;1msiwecos-core-api_1     |[0m 172.21.0.8 - - [07/May/2019:18:53:56 +0000] "POST /api/v2/callback/192 HTTP/1.1" 200 257 "-" "SIWECOS Version Scanner"
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:57,058 DEBG 'laravel-server_00' stdout output:
+[36;1msiwecos-core-api_1     |[0m 172.21.0.8 - - [07/May/2019:18:53:56 +0000] "POST /api/v2/callback/192 HTTP/1.1" 200 257 "-" "SIWECOS Version Scanner"
+[36;1msiwecos-core-api_1     |[0m 
+[33;1mversion-scanner_1      |[0m [2019-05-07 18:53:57][ic11sqckaJenpyuPDwddcxd2gFCtLDTK] Processed:  App\Jobs\VersionScanJob
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:57][WAyCmhe8iB3QqEUtC1eZeC2xHiVCoYhn] Processing: App\Jobs\NotifyCallbacksJob
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:57,168 DEBG 'laravel-worker_06' stdout output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:57][WAyCmhe8iB3QqEUtC1eZeC2xHiVCoYhn] Processing: App\Jobs\NotifyCallbacksJob
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:57] production.CRITICAL: Scan with ID 32 could not be sent to any given callbackurls.  
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:57,202 DEBG 'laravel-worker_06' stderr output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:57] production.CRITICAL: Scan with ID 32 could not be sent to any given callbackurls.  
+[36;1msiwecos-core-api_1     |[0m 
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:57][WAyCmhe8iB3QqEUtC1eZeC2xHiVCoYhn] Processed:  App\Jobs\NotifyCallbacksJob
+[36;1msiwecos-core-api_1     |[0m 2019-05-07 18:53:57,204 DEBG 'laravel-worker_06' stdout output:
+[36;1msiwecos-core-api_1     |[0m [2019-05-07 20:53:57][WAyCmhe8iB3QqEUtC1eZeC2xHiVCoYhn] Processed:  App\Jobs\NotifyCallbacksJob
+[36;1msiwecos-core-api_1     |[0m 
+Stopping docker-compose-scanners_version-scanner_1     ... 
+Stopping docker-compose-scanners_siwecos-core-api_1    ... 
+Stopping docker-compose-scanners_hshs-domxss-scanner_1 ... 
+Stopping docker-compose-scanners_ws-tls-scanner_1      ... 
+Stopping docker-compose-scanners_ws-port-scanner_1     ... 
+Stopping docker-compose-scanners_mariadb_1             ... 
+Stopping docker-compose-scanners_infoleak-scanner_1    ... 
+Stopping docker-compose-scanners_redis_1               ... 
+[2A[2KStopping docker-compose-scanners_infoleak-scanner_1    ... [32mdone[0m[2B[8A[2KStopping docker-compose-scanners_version-scanner_1     ... [32mdone[0m[8B[5A[2KStopping docker-compose-scanners_ws-tls-scanner_1      ... [32mdone[0m[5B[4A[2KStopping docker-compose-scanners_ws-port-scanner_1     ... [32mdone[0m[4B[6A[2KStopping docker-compose-scanners_hshs-domxss-scanner_1 ... [32mdone[0m[6B[7A[2KStopping docker-compose-scanners_siwecos-core-api_1    ... [32mdone[0m[7B[1A[2KStopping docker-compose-scanners_redis_1               ... [32mdone[0m[1B[3A[2KStopping docker-compose-scanners_mariadb_1             ... [32mdone[0m[3BGracefully stopping... (press Ctrl+C again to force)
