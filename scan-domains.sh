@@ -10,7 +10,9 @@ PORT)     url=http://localhost:8094/start ;;
 TLS)      url=http://localhost:8095/tls ;;
 # SCANNER_URL[MAIL]=
 VERSION)  url=http://localhost:8096/api/v1/version ;;
-*)        echo "Don't know about $1" ;;
+*)        echo "Don't know about $1" 
+          exit 1
+          ;;
 esac
 
 while read domain; do
