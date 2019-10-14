@@ -1,7 +1,6 @@
-version: '3'
+version: "3"
 
 services:
-
     hshs-domxss-scanner:
         image: siwecos/hshs-domxss-scanner:latest
         depends_on:
@@ -59,8 +58,13 @@ services:
             - HEADER_SCANNER_URL=http://hshs-domxss-scanner/api/v1/header
             - PORT_SCANNER_URL=http://port-scanner:8080/start
             - TLS_SCANNER_URL=http://tls-scanner:8080/tls
-            # - MAIL_SCANNER_URL=
             - VERSION_SCANNER_URL=http://version-scanner/api/v1/version
+            - POP3_TLS_SCANNER_URL=http://tls-scanner:8080/pop3
+            - POP3S_TLS_SCANNER_URL=http://tls-scanner:8080/pop3s
+            - IMAP_TLS_SCANNER_URL=http://tls-scanner:8080/imap
+            - IMAPS_TLS_SCANNER_URL=http://tls-scanner:8080/imaps
+            - SMTP_TLS_SCANNER_URL=http://tls-scanner:8080/smtp
+            - SMTPS_TLS_SCANNER_URL=http://tls-scanner:8080/smtps
             # - USER_AGENT=
             - REDIS_HOST=redis
             - REDIS_DB=0

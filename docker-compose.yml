@@ -1,7 +1,6 @@
-version: '3'
+version: "3"
 
 services:
-
     ini-s-scanner:
         image: siwecos/ini-s-scanner:develop
         ports:
@@ -55,8 +54,13 @@ services:
             - INFOLEAK_SCANNER_URL=http://infoleak-scanner/api/v2/start
             - PORT_SCANNER_URL=http://port-scanner:8080/start
             - TLS_SCANNER_URL=http://tls-scanner:8080/tls
-            # - MAIL_SCANNER_URL=http://tls-scanner:8080/mail
             - VERSION_SCANNER_URL=http://version-scanner/api/v1/version
+            - POP3_TLS_SCANNER_URL=http://tls-scanner:8080/pop3
+            - POP3S_TLS_SCANNER_URL=http://tls-scanner:8080/pop3s
+            - IMAP_TLS_SCANNER_URL=http://tls-scanner:8080/imap
+            - IMAPS_TLS_SCANNER_URL=http://tls-scanner:8080/imaps
+            - SMTP_TLS_SCANNER_URL=http://tls-scanner:8080/smtp
+            - SMTPS_TLS_SCANNER_URL=http://tls-scanner:8080/smtps
             # - USER_AGENT='Your Custom User-Agent Header'
             # - APP_DEBUG=true
             - LOG_CHANNEL=stderr
