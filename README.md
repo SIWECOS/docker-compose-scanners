@@ -37,7 +37,7 @@ You can do a quick-scan for a bunch of domains with the running as follows:
 2. Run the `scan-domains.sh` script
 
 The `scan-domain.sh` script allows different start parameters.
-You can either run `ALL` tests by using the [SIWECOS Core-API] or run a specific scanner by its name: `DOMXSS`, `HEADER`, `INFOLEAK`, `PORT`, `HTTPS`, `MAIL` or `VERSION`
+You can either run `ALL` tests by using the [SIWECOS Core-API] or run a specific scanner by its name: `DOMXSS`, `HEADER`, `INFOLEAK`, `PORT`, `TLS`, `IMAP_TLS`, `IMAPS_TLS`, `POP3_TLS`, `POP3S_TLS`, `SMTP_TLS`, `SMTPS_TLS` or `VERSION`
 
 The Results will be saved in the `data/scans.json` file.
 You can either open this file directly or check `http://localhost:3000/scans`.
