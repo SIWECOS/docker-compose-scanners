@@ -14,6 +14,7 @@ POP3_TLS)   url=http://localhost:8095/pop3;;
 POP3S_TLS)  url=http://localhost:8095/pop3s;;
 SMTP_TLS)   url=http://localhost:8095/smtp;;
 SMTPS_TLS)  url=http://localhost:8095/smtps;;
+SMTP_MSA_TLS) url=http://localhost:8095/smtp_msa;;
 VERSION)    url=http://localhost:8096/api/v1/version ;;
 *)        echo "Don't know about $1"
           exit 1
