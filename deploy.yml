@@ -65,7 +65,7 @@ services:
             - IMAPS_TLS_SCANNER_URL=http://tls-scanner:8080/imaps
             - SMTP_TLS_SCANNER_URL=http://tls-scanner:8080/smtp
             - SMTPS_TLS_SCANNER_URL=http://tls-scanner:8080/smtps
-            - SMTP_MSA_TLS_TLS_SCANNER_URL=http://tls-scanner:8080/smtp_msa
+            - SMTP_MSA_TLS_SCANNER_URL=http://tls-scanner:8080/smtp_msa
             # - USER_AGENT=
             - REDIS_HOST=redis
             - REDIS_DB=0
